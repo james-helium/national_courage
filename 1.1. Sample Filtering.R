@@ -25,28 +25,4 @@ sum(Trimed_Countries$Number_Responses) #which gives a final N = 1,523,509
 
 #Finally, create a final dataset with the countries we want to include and export to a csv file for easier future analyses
 Final_Data <- subset(Trimed_Data, Trimed_Data$geo_country %in% Trimed_Countries$Name_Countries == TRUE)
-write.csv(Final_Data, "Filtered_Raw_Data.csv")
-
-
-
-###################################
-#additional checks post-analyses: do countries have drastically different age make-ups?
-###################################
-
-Raw_Data <- read.csv('Data/Filtered Raw Data.csv')[,-1]
-
-country_list <- unique(Raw_Data$geo_country)[order(unique(Raw_Data$geo_country))]
-age_frame <- data.frame(Country = country_list, mean = rep(NA, 80), SE = rep(NA, 80))
-
-#extract mean age and sd for each country
-for(row in 1:nrow(age_frame)){
-  country <- age_frame$Country[row]
-  mean <- mean(Raw_Data$demo_age[Raw_Data$geo_country == country])
-  se <- sd(Raw_Data$demo_age[Raw_Data$geo_country == country]) / nrow(Raw_Data[Raw_Data$geo_country == country,])
-  age_frame$mean[row] <- mean
-  age_frame$SE[row] <- se
-  print(row / 80)
-}
-
-#upon visual inspection: countries average age range from 18 to 27, but none are above 1SD apart, tho some are multiple SEs apart
-
+write.csv(Final_Data, "data/filtered_full_sample.csv")

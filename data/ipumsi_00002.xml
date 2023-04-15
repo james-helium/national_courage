@@ -1,0 +1,1859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ipums-ddi-xslt.xsl"?>
+<codeBook ID="ddi2-42cb1170-58d9-013a-48a1-0242c0a82007-ipumsi_00002.dat-international.ipums.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Codebook for an IPUMS International Data Extract</titl>
+        <subTitl>DDI 2.5 metadata describing the extract file  'ipumsi_00002.dat'</subTitl>
+        <IDNo>ddi2-42cb1170-58d9-013a-48a1-0242c0a82007-ipumsi_00002.dat-international.ipums.org</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
+        <prodDate date="2023-04-15">April 15, 2023</prodDate>
+        <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact URI="https://ipums.org" affiliation="University of Minnesota">IPUMS</contact>
+      </distStmt>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>User Extract ipumsi_00002.dat</titl>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
+        <prodDate date="2023-04-15">April 15, 2023</prodDate>
+        <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact URI="https://ipums.org" affiliation="University of Minnesota">IPUMS</contact>
+      </distStmt>
+      <serStmt>
+        <serName abbr="ipumsi">IPUMS-International</serName>
+        <serInfo>DOI:10.18128/D020.V7.3</serInfo>
+      </serStmt>
+      <verStmt>
+        <version date="2023-04-15"/>
+      </verStmt>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <topcClas vocab="IPUMS">Technical Household Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Group Quarters Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Geography: Global Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Constructed Household Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Technical Person Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Demographic Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Education Variables -- PERSON</topcClas>
+      </subject>
+      <sumDscr ID="sdatref-2647">
+        <timePrd date="2010" event="single">2010</timePrd>
+        <nation abbr="ar">Argentina</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2696">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="at">Austria</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2650">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="bd">Bangladesh</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2713">
+        <timePrd date="2009" event="single">2009</timePrd>
+        <nation abbr="by">Belarus</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2651">
+        <timePrd date="2010" event="single">2010</timePrd>
+        <nation abbr="br">Brazil</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2718">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="ca">Canada</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2909">
+        <timePrd date="2017" event="single">2017</timePrd>
+        <nation abbr="cl">Chile</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2719">
+        <timePrd date="2000" event="single">2000</timePrd>
+        <nation abbr="cn">China</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2437">
+        <timePrd date="2005" event="single">2005</timePrd>
+        <nation abbr="co">Colombia</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2697">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="cr">Costa Rica</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2658">
+        <timePrd date="2010" event="single">2010</timePrd>
+        <nation abbr="ec">Ecuador</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2596">
+        <timePrd date="2006" event="single">2006</timePrd>
+        <nation abbr="eg">Egypt</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2890">
+        <timePrd date="2010" event="single">2010</timePrd>
+        <nation abbr="fi">Finland</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2702">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="fr">France</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2618">
+        <timePrd date="1987" event="single">1987</timePrd>
+        <nation abbr="de">Germany</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2721">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="gr">Greece</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2724">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="hu">Hungary</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2631">
+        <timePrd date="2010" event="single">2010</timePrd>
+        <nation abbr="id">Indonesia</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2723">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="ir">Iran</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2891">
+        <timePrd date="2016" event="single">2016</timePrd>
+        <nation abbr="ie">Ireland</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2892">
+        <timePrd date="2008" event="single">2008</timePrd>
+        <nation abbr="il">Israel</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2796">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="it">Italy</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2669">
+        <timePrd date="2009" event="single">2009</timePrd>
+        <nation abbr="ke">Kenya</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2481">
+        <timePrd date="2000" event="single">2000</timePrd>
+        <nation abbr="my">Malaysia</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2726">
+        <timePrd date="2015" event="single">2015</timePrd>
+        <nation abbr="mx">Mexico</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2893">
+        <timePrd date="2014" event="single">2014</timePrd>
+        <nation abbr="ma">Morocco</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2797">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="nl">Netherlands</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2554">
+        <timePrd date="1998" event="single">1998</timePrd>
+        <nation abbr="pk">Pakistan</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2671">
+        <timePrd date="2010" event="single">2010</timePrd>
+        <nation abbr="pa">Panama</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2551">
+        <timePrd date="2007" event="single">2007</timePrd>
+        <nation abbr="pe">Peru</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2798">
+        <timePrd date="2010" event="single">2010</timePrd>
+        <nation abbr="ph">Philippines</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2730">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="pl">Poland</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2706">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="pt">Portugal</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2694">
+        <timePrd date="2010" event="single">2010</timePrd>
+        <nation abbr="pr">Puerto Rico</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2725">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="ro">Romania</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2822">
+        <timePrd date="2010" event="single">2010</timePrd>
+        <nation abbr="ru">Russia</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2915">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="sk">Slovak Republic</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2538">
+        <timePrd date="2002" event="single">2002</timePrd>
+        <nation abbr="si">Slovenia</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2902">
+        <timePrd date="2016" event="single">2016</timePrd>
+        <nation abbr="za">South Africa</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2698">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="es">Spain</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2543">
+        <timePrd date="2000" event="single">2000</timePrd>
+        <nation abbr="ch">Switzerland</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2565">
+        <timePrd date="2000" event="single">2000</timePrd>
+        <nation abbr="th">Thailand</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2736">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="tt">Trinidad and Tobago</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2641">
+        <timePrd date="2000" event="single">2000</timePrd>
+        <nation abbr="tr">Turkey</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2689">
+        <timePrd date="2001" event="single">2001</timePrd>
+        <nation abbr="ua">Ukraine</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2505">
+        <timePrd date="2001" event="single">2001</timePrd>
+        <nation abbr="uk">United Kingdom</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2804">
+        <timePrd date="2015" event="single">2015</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2690">
+        <timePrd date="2011" event="single">2011</timePrd>
+        <nation abbr="uy">Uruguay</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2515">
+        <timePrd date="2001" event="single">2001</timePrd>
+        <nation abbr="ve">Venezuela</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2619">
+        <timePrd date="2009" event="single">2009</timePrd>
+        <nation abbr="vn">Vietnam</nation>
+      </sumDscr>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Argentina 2010
+            Density of the full data file:  10.0%
+            Density of this extract: 0.8%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Austria 2011
+            Density of the full data file:  10.0%
+            Density of this extract: 3.6%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Bangladesh 2011
+            Density of the full data file:  5.0%
+            Density of this extract: 0.2%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Belarus 2009
+            Density of the full data file:  10.0%
+            Density of this extract: 3.2%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Brazil 2010
+            Density of the full data file:  10.0%
+            Density of this extract: 0.1%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Canada 2011
+            Density of the full data file:  2.7%
+            Density of this extract: 0.9%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Chile 2017
+            Density of the full data file:  10.0%
+            Density of this extract: 1.7%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  China 2000
+            Density of the full data file:  1.0%
+            Density of this extract: 0.0%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Colombia 2005
+            Density of the full data file:  10.0%
+            Density of this extract: 0.7%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Costa Rica 2011
+            Density of the full data file:  10.0%
+            Density of this extract: 6.9%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Ecuador 2010
+            Density of the full data file:  10.0%
+            Density of this extract: 2.1%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Egypt 2006
+            Density of the full data file:  10.0%
+            Density of this extract: 0.4%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Finland 2010
+            Note: Persons not organized into households
+            Density of the full data file:  5.0%
+            Density of this extract: 5.0%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  France 2011
+            Note: Combines data from 2009-2013; includes overseas departments
+            Density of the full data file:  33.0%
+            Density of this extract: 0.5%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Germany 1987 (West)
+            Note: West Germany
+            Density of the full data file:  5.0%
+            Density of this extract: 0.5%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Greece 2011
+            Density of the full data file:  10.0%
+            Density of this extract: 2.8%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Hungary 2011
+            Density of the full data file:  5.0%
+            Density of this extract: 3.0%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Indonesia 2010
+            Density of the full data file:  10.0%
+            Density of this extract: 0.1%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Iran 2011
+            Density of the full data file:  2.0%
+            Density of this extract: 0.4%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Ireland 2016
+            Note: Age is grouped into categories
+            Density of the full data file:  10.0%
+            Density of this extract: 6.1%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Israel 2008
+            Density of the full data file:  7.0%
+            Density of this extract: 3.9%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Italy 2011
+            Note: Low ages grouped into categories
+            Density of the full data file:  5.0%
+            Density of this extract: 0.5%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Kenya 2009
+            Density of the full data file:  10.0%
+            Density of this extract: 0.8%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Malaysia 2000
+            Density of the full data file:  2.0%
+            Density of this extract: 1.4%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Mexico 2015
+            Density of the full data file:  9.5%
+            Density of this extract: 0.2%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Morocco 2014
+            Note: Age is grouped into categories
+            Density of the full data file:  10.0%
+            Density of this extract: 0.9%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Netherlands 2011
+            Note: Persons not organized into households; age grouped into categories; virtual census
+            Density of the full data file:  2.5%
+            Density of this extract: 1.8%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Pakistan 1998
+            Note: Excludes 3 provinces
+            Density of the full data file:  10.0%
+            Density of this extract: 0.2%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Panama 2010
+            Density of the full data file:  10.0%
+            Density of this extract: 8.8%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Peru 2007
+            Density of the full data file:  10.0%
+            Density of this extract: 1.1%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Philippines 2010
+            Density of the full data file:  10.0%
+            Density of this extract: 0.3%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Poland 2011
+            Density of the full data file:  10.0%
+            Density of this extract: 0.7%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Portugal 2011
+            Density of the full data file:  5.0%
+            Density of this extract: 2.8%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Puerto Rico 2010
+            Density of the full data file:  1.0%
+            Density of this extract: 1.0%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Romania 2011
+            Density of the full data file:  10.0%
+            Density of this extract: 1.5%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Russia 2010
+            Density of the full data file:  5.0%
+            Density of this extract: 0.2%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Slovak Republic 2011
+            Note: Persons not organized into households
+            Density of the full data file:  10.0%
+            Density of this extract: 5.6%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Slovenia 2002
+            Note: Age is grouped into categories
+            Density of the full data file:  10.0%
+            Density of this extract: 10.0%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  South Africa 2016
+            Density of the full data file:  5.8%
+            Density of this extract: 0.5%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Spain 2011
+            Density of the full data file:  10.0%
+            Density of this extract: 0.7%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Switzerland 2000
+            Density of the full data file:  5.0%
+            Density of this extract: 4.1%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Thailand 2000
+            Density of the full data file:  1.0%
+            Density of this extract: 0.5%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Trinidad and Tobago 2011
+            Density of the full data file:  8.8%
+            Density of this extract: 8.8%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Turkey 2000
+            Density of the full data file:  5.0%
+            Density of this extract: 0.4%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Ukraine 2001
+            Density of the full data file:  10.0%
+            Density of this extract: 0.6%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  United Kingdom 2001
+            Note: Persons not organized into households; age grouped into categories
+            Density of the full data file:  3.0%
+            Density of this extract: 0.5%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  United States 2015
+            Note: Household survey
+            Density of the full data file:  1.0%
+            Density of this extract: 0.1%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Uruguay 2011
+            Density of the full data file:  10.0%
+            Density of this extract: 9.2%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Venezuela 2001
+            Density of the full data file:  10.0%
+            Density of this extract: 1.3%
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Vietnam 2009
+            Density of the full data file:  15.0%
+            Density of this extract: 0.3%
+]]></notes>
+    </stdyInfo>
+    <dataAccs>
+      <useStmt>
+        <confDec required="yes"><![CDATA[IPUMS-International distributes integrated microdata of individuals and households only by agreement of collaborating national statistical offices and under the strictest of confidence. Before data may be distributed to an individual researcher, an electronic license agreement must be signed and approved.
+
+To gain access to the data, a researcher must agree to the following:
+
+(1) Implement security measures to prevent unauthorized access to census microdata. Under IPUMS-International agreements with collaborating agencies, redistribution of the data to third parties is prohibited.
+
+(2) Use the microdata for the exclusive purposes of scholarly research and education. Researchers must explicitly agree to not use microdata acquired for any commercial or income-generating venture.
+
+(3) Maintain the confidentiality of persons, households, and other entities. Any attempt to ascertain the identity of persons or households from the microdata is prohibited. Alleging that a person or household has been identified is also prohibited.
+
+(4) Report all publications based on these data to IPUMS-International, which will in turn pass the information on to the relevant national statistical agencies.
+
+Once a project is approved, a password is issued and data may be acquired through the Internet. Penalties for violating the license include: revocation of the license, recall of all microdata acquired, filing of a motion of censure to the appropriate professional organizations, and civil prosecution under the relevant national or international statutes.
+
+These safeguards mirror the principles from the Joint ECE/Eurostat Work Session on Statistical Data Confidentiality. Employees of the Minnesota Population Center who work with the census microdata to produce the harmonized database also sign agreements to respect the confidentiality of the data.
+
+IPUMS-International works with each country's statistical office to minimize the risk of disclosure of respondent information. The details of the confidentiality protections vary across countries, but in all cases, names and detailed geographic information are suppressed and top-codes are imposed on variables such as income that might identify specific persons. In addition, IPUMS-International uses a variety of technical procedures to enhance confidentiality protection. These include the following:
+
+  
+(1) Swapping an undisclosed fraction of records from one administrative district to another to make positive identification of individuals impossible.
+
+(2) Randomizing the placement of households within districts to disguise the order in which individuals were enumerated or the data processed.
+
+(3) Aggregating codes of sensitive characteristics (e.g., grouping together very small ethnic categories)
+
+(4) Top- and bottom-coding continuous variables to prevent identification of extreme cases.
+
+The safety record for public-use census microdata is apparently perfect. In almost four decades of use, there has not been a single verified breach of statistical confidentiality. The measures implemented by the IPUMS-International are designed to extend this record.]]></confDec>
+        <contact URI="http://international.ipums.org" affiliation="IPUMS">IPUMS International</contact>
+        <citReq><![CDATA[Minnesota Population Center. Integrated Public Use Microdata Series, International: Version 7.3 [dataset]. Minneapolis, MN: IPUMS, 2020. https://doi.org/10.18128/D020.V7.3
+
+Researchers should also acknowledge the statistical agency that originally produced the data.
+
+
+The licensing agreement for use of IPUMS-International data requires that users supply IPUMS-International with the title and full citation for any publications, research reports, or educational materials making use of the data or documentation.
+
+Copies of such materials are also gratefully received at ipums@umn.edu.
+
+Printed matter should be sent to:
+IPUMS-International
+Minnesota Population Center
+University of Minnesota
+50 Willey Hall
+225 19th Avenue South
+Minneapolis, MN 55455
+]]></citReq>
+        <conditions><![CDATA[An adapted version of the dataset, harmonized for international comparability, is available from IPUMS-International (https://international.ipums.org/international/) under the following conditions:
+
+  
+IPUMS-International distributes integrated microdata of individuals and households only by agreement of collaborating national statistical offices and under the strictest of confidence. Before data may be distributed to an individual researcher, an electronic license agreement must be signed and approved.  To gain access to the data, a researcher must agree to the following:
+
+(1) Implement security measures to prevent unauthorized access to census microdata. Under IPUMS-International agreements with collaborating agencies, redistribution of the data to third parties is prohibited.
+
+(2) Use the microdata for the exclusive purposes of scholarly research and education. Researchers must explicitly agree to not use microdata acquired for any commercial or income-generating venture.
+
+(3) Maintain the confidentiality of persons, households, and other entities. Any attempt to ascertain the identity of persons or households from the microdata is prohibited. Alleging that a person or household has been identified is also prohibited.
+
+(4) Report all publications based on these data to IPUMS-International, which will in turn pass the information on to the relevant national statistical agencies.
+
+Once a project is approved, a password is issued and data may be acquired through the Internet. Penalties for violating the license include: revocation of the license, recall of all microdata acquired, filing of a motion of censure to the appropriate professional organizations, and civil prosecution under the relevant national or international statutes.
+
+These safeguards mirror the principles from the Joint ECE/Eurostat Work Session on Statistical Data Confidentiality. Employees of the Minnesota Population Center who work with the census microdata to produce the harmonized database also sign agreements to respect the confidentiality of the data.
+]]></conditions>
+        <disclaimer>The user of the data acknowledges that the original collector of the data, the authorized distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses.</disclaimer>
+      </useStmt>
+    </dataAccs>
+    <notes><![CDATA[User-provided description:  Additional data for Courage SCA Project]]></notes>
+  </stdyDscr>
+  <fileDscr ID="ExtractData">
+    <fileTxt>
+      <fileName>ipumsi_00002.dat</fileName>
+      <fileCont>Microdata records</fileCont>
+      <fileStrc type="hierarchical">
+        <recGrp keyvar="YEAR DATANUM SERIAL" recidvar="RECTYPE" rectype="P">
+          <labl>Person Record</labl>
+        </recGrp>
+        <recGrp recidvar="RECTYPE" rectype="H">
+          <labl>Household Record</labl>
+        </recGrp>
+      </fileStrc>
+      <fileType charset="ISO-8859-1">ISO-8859-1 data file</fileType>
+      <format>fixed length fields</format>
+      <filePlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</filePlac>
+    </fileTxt>
+  </fileDscr>
+  <dataDscr>
+    <var ID="RECTYPE" dcml="0" files="ExtractData" intrvl="contin" name="RECTYPE" rectype="H P">
+      <location EndPos="1" StartPos="1" width="1"/>
+      <labl>Record type</labl>
+      <txt><![CDATA[RECTYPE identifies the type of record for the case: household or person.
+
+NOTE: RECTYPE is an alphabetic (character string) variable with a value of 'H' for household records and 'P' for person records. RECTYPE will not appear as a variable in the default rectangular extracts produced by the data extract system. It is only available in hierarchical extracts, to distinguish between the two record types.]]></txt>
+      <catgry>
+        <catValu>H</catValu>
+        <labl>Household</labl>
+      </catgry>
+      <catgry>
+        <catValu>P</catValu>
+        <labl>Person</labl>
+      </catgry>
+      <concept vocab="IPUMS">Technical Household Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="COUNTRY" dcml="0" files="ExtractData" intrvl="discrete" name="COUNTRY" rectype="H P">
+      <location EndPos="4" StartPos="2" width="3"/>
+      <labl>Country</labl>
+      <txt><![CDATA[COUNTRY gives the country from which the sample was drawn.  The codes assigned to each country are those used by the UN Statistics Division and the ISO (International Organization for Standardization).]]></txt>
+      <catgry>
+        <catValu>032</catValu>
+        <labl>Argentina</labl>
+      </catgry>
+      <catgry>
+        <catValu>051</catValu>
+        <labl>Armenia</labl>
+      </catgry>
+      <catgry>
+        <catValu>040</catValu>
+        <labl>Austria</labl>
+      </catgry>
+      <catgry>
+        <catValu>050</catValu>
+        <labl>Bangladesh</labl>
+      </catgry>
+      <catgry>
+        <catValu>112</catValu>
+        <labl>Belarus</labl>
+      </catgry>
+      <catgry>
+        <catValu>204</catValu>
+        <labl>Benin</labl>
+      </catgry>
+      <catgry>
+        <catValu>068</catValu>
+        <labl>Bolivia</labl>
+      </catgry>
+      <catgry>
+        <catValu>072</catValu>
+        <labl>Botswana</labl>
+      </catgry>
+      <catgry>
+        <catValu>076</catValu>
+        <labl>Brazil</labl>
+      </catgry>
+      <catgry>
+        <catValu>854</catValu>
+        <labl>Burkina Faso</labl>
+      </catgry>
+      <catgry>
+        <catValu>116</catValu>
+        <labl>Cambodia</labl>
+      </catgry>
+      <catgry>
+        <catValu>120</catValu>
+        <labl>Cameroon</labl>
+      </catgry>
+      <catgry>
+        <catValu>124</catValu>
+        <labl>Canada</labl>
+      </catgry>
+      <catgry>
+        <catValu>152</catValu>
+        <labl>Chile</labl>
+      </catgry>
+      <catgry>
+        <catValu>156</catValu>
+        <labl>China</labl>
+      </catgry>
+      <catgry>
+        <catValu>170</catValu>
+        <labl>Colombia</labl>
+      </catgry>
+      <catgry>
+        <catValu>188</catValu>
+        <labl>Costa Rica</labl>
+      </catgry>
+      <catgry>
+        <catValu>192</catValu>
+        <labl>Cuba</labl>
+      </catgry>
+      <catgry>
+        <catValu>208</catValu>
+        <labl>Denmark</labl>
+      </catgry>
+      <catgry>
+        <catValu>214</catValu>
+        <labl>Dominican Republic</labl>
+      </catgry>
+      <catgry>
+        <catValu>218</catValu>
+        <labl>Ecuador</labl>
+      </catgry>
+      <catgry>
+        <catValu>818</catValu>
+        <labl>Egypt</labl>
+      </catgry>
+      <catgry>
+        <catValu>222</catValu>
+        <labl>El Salvador</labl>
+      </catgry>
+      <catgry>
+        <catValu>231</catValu>
+        <labl>Ethiopia</labl>
+      </catgry>
+      <catgry>
+        <catValu>242</catValu>
+        <labl>Fiji</labl>
+      </catgry>
+      <catgry>
+        <catValu>246</catValu>
+        <labl>Finland</labl>
+      </catgry>
+      <catgry>
+        <catValu>250</catValu>
+        <labl>France</labl>
+      </catgry>
+      <catgry>
+        <catValu>276</catValu>
+        <labl>Germany</labl>
+      </catgry>
+      <catgry>
+        <catValu>288</catValu>
+        <labl>Ghana</labl>
+      </catgry>
+      <catgry>
+        <catValu>300</catValu>
+        <labl>Greece</labl>
+      </catgry>
+      <catgry>
+        <catValu>320</catValu>
+        <labl>Guatemala</labl>
+      </catgry>
+      <catgry>
+        <catValu>324</catValu>
+        <labl>Guinea</labl>
+      </catgry>
+      <catgry>
+        <catValu>332</catValu>
+        <labl>Haiti</labl>
+      </catgry>
+      <catgry>
+        <catValu>340</catValu>
+        <labl>Honduras</labl>
+      </catgry>
+      <catgry>
+        <catValu>348</catValu>
+        <labl>Hungary</labl>
+      </catgry>
+      <catgry>
+        <catValu>352</catValu>
+        <labl>Iceland</labl>
+      </catgry>
+      <catgry>
+        <catValu>356</catValu>
+        <labl>India</labl>
+      </catgry>
+      <catgry>
+        <catValu>360</catValu>
+        <labl>Indonesia</labl>
+      </catgry>
+      <catgry>
+        <catValu>364</catValu>
+        <labl>Iran</labl>
+      </catgry>
+      <catgry>
+        <catValu>368</catValu>
+        <labl>Iraq</labl>
+      </catgry>
+      <catgry>
+        <catValu>372</catValu>
+        <labl>Ireland</labl>
+      </catgry>
+      <catgry>
+        <catValu>376</catValu>
+        <labl>Israel</labl>
+      </catgry>
+      <catgry>
+        <catValu>380</catValu>
+        <labl>Italy</labl>
+      </catgry>
+      <catgry>
+        <catValu>388</catValu>
+        <labl>Jamaica</labl>
+      </catgry>
+      <catgry>
+        <catValu>400</catValu>
+        <labl>Jordan</labl>
+      </catgry>
+      <catgry>
+        <catValu>404</catValu>
+        <labl>Kenya</labl>
+      </catgry>
+      <catgry>
+        <catValu>417</catValu>
+        <labl>Kyrgyz Republic</labl>
+      </catgry>
+      <catgry>
+        <catValu>418</catValu>
+        <labl>Laos</labl>
+      </catgry>
+      <catgry>
+        <catValu>426</catValu>
+        <labl>Lesotho</labl>
+      </catgry>
+      <catgry>
+        <catValu>430</catValu>
+        <labl>Liberia</labl>
+      </catgry>
+      <catgry>
+        <catValu>454</catValu>
+        <labl>Malawi</labl>
+      </catgry>
+      <catgry>
+        <catValu>458</catValu>
+        <labl>Malaysia</labl>
+      </catgry>
+      <catgry>
+        <catValu>466</catValu>
+        <labl>Mali</labl>
+      </catgry>
+      <catgry>
+        <catValu>480</catValu>
+        <labl>Mauritius</labl>
+      </catgry>
+      <catgry>
+        <catValu>484</catValu>
+        <labl>Mexico</labl>
+      </catgry>
+      <catgry>
+        <catValu>496</catValu>
+        <labl>Mongolia</labl>
+      </catgry>
+      <catgry>
+        <catValu>504</catValu>
+        <labl>Morocco</labl>
+      </catgry>
+      <catgry>
+        <catValu>508</catValu>
+        <labl>Mozambique</labl>
+      </catgry>
+      <catgry>
+        <catValu>104</catValu>
+        <labl>Myanmar</labl>
+      </catgry>
+      <catgry>
+        <catValu>524</catValu>
+        <labl>Nepal</labl>
+      </catgry>
+      <catgry>
+        <catValu>528</catValu>
+        <labl>Netherlands</labl>
+      </catgry>
+      <catgry>
+        <catValu>558</catValu>
+        <labl>Nicaragua</labl>
+      </catgry>
+      <catgry>
+        <catValu>566</catValu>
+        <labl>Nigeria</labl>
+      </catgry>
+      <catgry>
+        <catValu>578</catValu>
+        <labl>Norway</labl>
+      </catgry>
+      <catgry>
+        <catValu>586</catValu>
+        <labl>Pakistan</labl>
+      </catgry>
+      <catgry>
+        <catValu>275</catValu>
+        <labl>Palestine</labl>
+      </catgry>
+      <catgry>
+        <catValu>591</catValu>
+        <labl>Panama</labl>
+      </catgry>
+      <catgry>
+        <catValu>598</catValu>
+        <labl>Papua New Guinea</labl>
+      </catgry>
+      <catgry>
+        <catValu>600</catValu>
+        <labl>Paraguay</labl>
+      </catgry>
+      <catgry>
+        <catValu>604</catValu>
+        <labl>Peru</labl>
+      </catgry>
+      <catgry>
+        <catValu>608</catValu>
+        <labl>Philippines</labl>
+      </catgry>
+      <catgry>
+        <catValu>616</catValu>
+        <labl>Poland</labl>
+      </catgry>
+      <catgry>
+        <catValu>620</catValu>
+        <labl>Portugal</labl>
+      </catgry>
+      <catgry>
+        <catValu>630</catValu>
+        <labl>Puerto Rico</labl>
+      </catgry>
+      <catgry>
+        <catValu>642</catValu>
+        <labl>Romania</labl>
+      </catgry>
+      <catgry>
+        <catValu>643</catValu>
+        <labl>Russia</labl>
+      </catgry>
+      <catgry>
+        <catValu>646</catValu>
+        <labl>Rwanda</labl>
+      </catgry>
+      <catgry>
+        <catValu>662</catValu>
+        <labl>Saint Lucia</labl>
+      </catgry>
+      <catgry>
+        <catValu>686</catValu>
+        <labl>Senegal</labl>
+      </catgry>
+      <catgry>
+        <catValu>694</catValu>
+        <labl>Sierra Leone</labl>
+      </catgry>
+      <catgry>
+        <catValu>703</catValu>
+        <labl>Slovak Republic</labl>
+      </catgry>
+      <catgry>
+        <catValu>705</catValu>
+        <labl>Slovenia</labl>
+      </catgry>
+      <catgry>
+        <catValu>710</catValu>
+        <labl>South Africa</labl>
+      </catgry>
+      <catgry>
+        <catValu>728</catValu>
+        <labl>South Sudan</labl>
+      </catgry>
+      <catgry>
+        <catValu>724</catValu>
+        <labl>Spain</labl>
+      </catgry>
+      <catgry>
+        <catValu>729</catValu>
+        <labl>Sudan</labl>
+      </catgry>
+      <catgry>
+        <catValu>740</catValu>
+        <labl>Suriname</labl>
+      </catgry>
+      <catgry>
+        <catValu>752</catValu>
+        <labl>Sweden</labl>
+      </catgry>
+      <catgry>
+        <catValu>756</catValu>
+        <labl>Switzerland</labl>
+      </catgry>
+      <catgry>
+        <catValu>834</catValu>
+        <labl>Tanzania</labl>
+      </catgry>
+      <catgry>
+        <catValu>764</catValu>
+        <labl>Thailand</labl>
+      </catgry>
+      <catgry>
+        <catValu>768</catValu>
+        <labl>Togo</labl>
+      </catgry>
+      <catgry>
+        <catValu>780</catValu>
+        <labl>Trinidad and Tobago</labl>
+      </catgry>
+      <catgry>
+        <catValu>792</catValu>
+        <labl>Turkey</labl>
+      </catgry>
+      <catgry>
+        <catValu>800</catValu>
+        <labl>Uganda</labl>
+      </catgry>
+      <catgry>
+        <catValu>804</catValu>
+        <labl>Ukraine</labl>
+      </catgry>
+      <catgry>
+        <catValu>826</catValu>
+        <labl>United Kingdom</labl>
+      </catgry>
+      <catgry>
+        <catValu>840</catValu>
+        <labl>United States</labl>
+      </catgry>
+      <catgry>
+        <catValu>858</catValu>
+        <labl>Uruguay</labl>
+      </catgry>
+      <catgry>
+        <catValu>862</catValu>
+        <labl>Venezuela</labl>
+      </catgry>
+      <catgry>
+        <catValu>704</catValu>
+        <labl>Vietnam</labl>
+      </catgry>
+      <catgry>
+        <catValu>894</catValu>
+        <labl>Zambia</labl>
+      </catgry>
+      <catgry>
+        <catValu>716</catValu>
+        <labl>Zimbabwe</labl>
+      </catgry>
+      <concept vocab="IPUMS">Technical Household Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="SERIAL" dcml="0" files="ExtractData" intrvl="contin" name="SERIAL" rectype="H P">
+      <location EndPos="16" StartPos="5" width="12"/>
+      <labl>Household serial number</labl>
+      <txt><![CDATA[SERIAL is an identifying number unique to each household in a given sample. All person records are assigned the same serial number as the household record that they follow. (Person records also have their own unique identifiers -- see PERNUM.) The combination of SAMPLE and SERIAL provides a unique identifier for every household in the IPUMS-International database; SAMPLE, SERIAL and PERNUM uniquely identify every person in the database. 
+
+SERIAL can be used to identify dwellings in some samples.  In these samples, the first 7 digits of SERIAL provide the dwelling number common to all households that were sampled from the same structure. The last three digits give the sequence of the household within the dwelling. The following is a list of samples in which dwellings can be inferred:
+Chile 1970, 1992, 2002Colombia 1993, 2005Costa Rica 1984, 2000Cuba 2002Dominican Republic 1981, 2002, 2010Ecuador 1990, 2001Germany 1971Hungary 1980, 1990, 2001Jamaica 1982, 1991, 2001Malaysia 1970, 1991, 2000Mexico 1995, 1990, 2000, 2005Nigeria 2006Panama 2000Peru 1993, 2007Portugal 1981, 1991, 2001Spain 1991Uruguay 2011Venezuela 1990, 2001Vietnam 1989In all other samples, the last 3 digits are always zeroes.
+
+SERIAL was constructed for IPUMS-International, and has no relation to the serial number in the original datasets.
+
+The U.S. 1900 sample and 1880 10% sample have multi-household dwellings that can be identified using the last 3 digits of SERIAL.]]></txt>
+      <codInstr><![CDATA[SERIAL is a 10-digit numeric variable.
+
+The last 3 digits of SERIAL indicate household number within dwelling for selected samples noted in the variable description. In all other samples, the last 3 digits are always zeroes.]]></codInstr>
+      <concept vocab="IPUMS">Technical Household Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="PERSONS" dcml="0" files="ExtractData" intrvl="contin" name="PERSONS" rectype="H">
+      <location EndPos="20" StartPos="17" width="4"/>
+      <labl>Number of person records in the household</labl>
+      <txt><![CDATA[PERSONS indicates how many person records are included in the household (i.e., the number of person records associated with the household record in the sample). These person records will all have the same serial number (SERIAL) as the household record. The information contained in the household record will normally apply to all of these persons.]]></txt>
+      <codInstr><![CDATA[PERSONS is a 4-digit numeric variable.]]></codInstr>
+      <concept vocab="IPUMS">Technical Household Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="HHWT" dcml="2" files="ExtractData" intrvl="contin" name="HHWT" rectype="H">
+      <location EndPos="28" StartPos="21" width="8"/>
+      <labl>Household weight</labl>
+      <txt><![CDATA[HHWT indicates the number of households in the population represented by the household in the sample.
+
+For the samples that are truly weighted (see the comparability discussion), HHWT must be used to yield accurate household-level statistics.
+
+NOTE: HHWT has 2 implied decimal places.  That is, the last two digits of the eight-digit variable are decimal digits, but there is no actual decimal in the data.]]></txt>
+      <codInstr><![CDATA[HHWT is an 8-digit numeric variable with 2 implied decimal places. See the variable description.]]></codInstr>
+      <concept vocab="IPUMS">Technical Household Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="UNREL" dcml="0" files="ExtractData" intrvl="discrete" name="UNREL" rectype="H">
+      <location EndPos="29" StartPos="29" width="1"/>
+      <labl>Number of unrelated persons</labl>
+      <txt><![CDATA[UNREL indicates the number of persons in the household who are unrelated to the head as defined in the variable RELATE.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>0</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>1</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>2</labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl>3</labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl>4</labl>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl>5</labl>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl>6</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>7</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>8</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>9+</labl>
+      </catgry>
+      <concept vocab="IPUMS">Group Quarters Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="URBAN" dcml="0" files="ExtractData" intrvl="discrete" name="URBAN" rectype="H">
+      <location EndPos="30" StartPos="30" width="1"/>
+      <labl>Urban-rural status</labl>
+      <txt><![CDATA[URBAN indicates whether the household was located in a place designated as urban or as rural.]]></txt>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>Rural</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Urban</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown</labl>
+      </catgry>
+      <concept vocab="IPUMS">Geography: Global Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="NCOUPLES" dcml="0" files="ExtractData" intrvl="discrete" name="NCOUPLES" rectype="H">
+      <location EndPos="31" StartPos="31" width="1"/>
+      <labl>Number of married couples in household</labl>
+      <txt><![CDATA[NCOUPLES is a constructed variable indicating the number of married/in-union couples within a household.  
+
+NCOUPLES is constructed using the IPUMS-International pointer variable SPLOC (spouse's location in the household).]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>No married couples in household</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>1 couple</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>2 couples</labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl>3 couples</labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl>4 couples</labl>
+      </catgry>
+      <catgry>
+        <catValu>5</catValu>
+        <labl>5 couples</labl>
+      </catgry>
+      <catgry>
+        <catValu>6</catValu>
+        <labl>6 couples</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>7 couples</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>8 couples</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>9 or more couples</labl>
+      </catgry>
+      <concept vocab="IPUMS">Constructed Household Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="PERWT" dcml="2" files="ExtractData" intrvl="contin" name="PERWT" rectype="P">
+      <location EndPos="24" StartPos="17" width="8"/>
+      <labl>Person weight</labl>
+      <txt><![CDATA[PERWT indicates the number of persons in the actual population represented by the person in the sample.
+
+For the samples that are truly weighted (see the comparability discussion), PERWT must be used to yield accurate statistics for the population.
+
+NOTE: PERWT has 2 implied decimal places.  That is, the last two digits of the eight-digit variable are decimal digits, but there is no actual decimal in the data.]]></txt>
+      <codInstr><![CDATA[PERWT is an 8-digit numeric variable with 2 implied decimal places. See the variable description.]]></codInstr>
+      <concept vocab="IPUMS">Technical Person Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="AGE" dcml="0" files="ExtractData" intrvl="discrete" name="AGE" rectype="P">
+      <location EndPos="27" StartPos="25" width="3"/>
+      <labl>Age</labl>
+      <txt><![CDATA[AGE gives age in years as of the person's last birthday prior to or on the day of enumeration.]]></txt>
+      <catgry>
+        <catValu>000</catValu>
+        <labl>Less than 1 year</labl>
+      </catgry>
+      <catgry>
+        <catValu>001</catValu>
+        <labl>1 year</labl>
+      </catgry>
+      <catgry>
+        <catValu>002</catValu>
+        <labl>2 years</labl>
+      </catgry>
+      <catgry>
+        <catValu>003</catValu>
+        <labl>3</labl>
+      </catgry>
+      <catgry>
+        <catValu>004</catValu>
+        <labl>4</labl>
+      </catgry>
+      <catgry>
+        <catValu>005</catValu>
+        <labl>5</labl>
+      </catgry>
+      <catgry>
+        <catValu>006</catValu>
+        <labl>6</labl>
+      </catgry>
+      <catgry>
+        <catValu>007</catValu>
+        <labl>7</labl>
+      </catgry>
+      <catgry>
+        <catValu>008</catValu>
+        <labl>8</labl>
+      </catgry>
+      <catgry>
+        <catValu>009</catValu>
+        <labl>9</labl>
+      </catgry>
+      <catgry>
+        <catValu>010</catValu>
+        <labl>10</labl>
+      </catgry>
+      <catgry>
+        <catValu>011</catValu>
+        <labl>11</labl>
+      </catgry>
+      <catgry>
+        <catValu>012</catValu>
+        <labl>12</labl>
+      </catgry>
+      <catgry>
+        <catValu>013</catValu>
+        <labl>13</labl>
+      </catgry>
+      <catgry>
+        <catValu>014</catValu>
+        <labl>14</labl>
+      </catgry>
+      <catgry>
+        <catValu>015</catValu>
+        <labl>15</labl>
+      </catgry>
+      <catgry>
+        <catValu>016</catValu>
+        <labl>16</labl>
+      </catgry>
+      <catgry>
+        <catValu>017</catValu>
+        <labl>17</labl>
+      </catgry>
+      <catgry>
+        <catValu>018</catValu>
+        <labl>18</labl>
+      </catgry>
+      <catgry>
+        <catValu>019</catValu>
+        <labl>19</labl>
+      </catgry>
+      <catgry>
+        <catValu>020</catValu>
+        <labl>20</labl>
+      </catgry>
+      <catgry>
+        <catValu>021</catValu>
+        <labl>21</labl>
+      </catgry>
+      <catgry>
+        <catValu>022</catValu>
+        <labl>22</labl>
+      </catgry>
+      <catgry>
+        <catValu>023</catValu>
+        <labl>23</labl>
+      </catgry>
+      <catgry>
+        <catValu>024</catValu>
+        <labl>24</labl>
+      </catgry>
+      <catgry>
+        <catValu>025</catValu>
+        <labl>25</labl>
+      </catgry>
+      <catgry>
+        <catValu>026</catValu>
+        <labl>26</labl>
+      </catgry>
+      <catgry>
+        <catValu>027</catValu>
+        <labl>27</labl>
+      </catgry>
+      <catgry>
+        <catValu>028</catValu>
+        <labl>28</labl>
+      </catgry>
+      <catgry>
+        <catValu>029</catValu>
+        <labl>29</labl>
+      </catgry>
+      <catgry>
+        <catValu>030</catValu>
+        <labl>30</labl>
+      </catgry>
+      <catgry>
+        <catValu>031</catValu>
+        <labl>31</labl>
+      </catgry>
+      <catgry>
+        <catValu>032</catValu>
+        <labl>32</labl>
+      </catgry>
+      <catgry>
+        <catValu>033</catValu>
+        <labl>33</labl>
+      </catgry>
+      <catgry>
+        <catValu>034</catValu>
+        <labl>34</labl>
+      </catgry>
+      <catgry>
+        <catValu>035</catValu>
+        <labl>35</labl>
+      </catgry>
+      <catgry>
+        <catValu>036</catValu>
+        <labl>36</labl>
+      </catgry>
+      <catgry>
+        <catValu>037</catValu>
+        <labl>37</labl>
+      </catgry>
+      <catgry>
+        <catValu>038</catValu>
+        <labl>38</labl>
+      </catgry>
+      <catgry>
+        <catValu>039</catValu>
+        <labl>39</labl>
+      </catgry>
+      <catgry>
+        <catValu>040</catValu>
+        <labl>40</labl>
+      </catgry>
+      <catgry>
+        <catValu>041</catValu>
+        <labl>41</labl>
+      </catgry>
+      <catgry>
+        <catValu>042</catValu>
+        <labl>42</labl>
+      </catgry>
+      <catgry>
+        <catValu>043</catValu>
+        <labl>43</labl>
+      </catgry>
+      <catgry>
+        <catValu>044</catValu>
+        <labl>44</labl>
+      </catgry>
+      <catgry>
+        <catValu>045</catValu>
+        <labl>45</labl>
+      </catgry>
+      <catgry>
+        <catValu>046</catValu>
+        <labl>46</labl>
+      </catgry>
+      <catgry>
+        <catValu>047</catValu>
+        <labl>47</labl>
+      </catgry>
+      <catgry>
+        <catValu>048</catValu>
+        <labl>48</labl>
+      </catgry>
+      <catgry>
+        <catValu>049</catValu>
+        <labl>49</labl>
+      </catgry>
+      <catgry>
+        <catValu>050</catValu>
+        <labl>50</labl>
+      </catgry>
+      <catgry>
+        <catValu>051</catValu>
+        <labl>51</labl>
+      </catgry>
+      <catgry>
+        <catValu>052</catValu>
+        <labl>52</labl>
+      </catgry>
+      <catgry>
+        <catValu>053</catValu>
+        <labl>53</labl>
+      </catgry>
+      <catgry>
+        <catValu>054</catValu>
+        <labl>54</labl>
+      </catgry>
+      <catgry>
+        <catValu>055</catValu>
+        <labl>55</labl>
+      </catgry>
+      <catgry>
+        <catValu>056</catValu>
+        <labl>56</labl>
+      </catgry>
+      <catgry>
+        <catValu>057</catValu>
+        <labl>57</labl>
+      </catgry>
+      <catgry>
+        <catValu>058</catValu>
+        <labl>58</labl>
+      </catgry>
+      <catgry>
+        <catValu>059</catValu>
+        <labl>59</labl>
+      </catgry>
+      <catgry>
+        <catValu>060</catValu>
+        <labl>60</labl>
+      </catgry>
+      <catgry>
+        <catValu>061</catValu>
+        <labl>61</labl>
+      </catgry>
+      <catgry>
+        <catValu>062</catValu>
+        <labl>62</labl>
+      </catgry>
+      <catgry>
+        <catValu>063</catValu>
+        <labl>63</labl>
+      </catgry>
+      <catgry>
+        <catValu>064</catValu>
+        <labl>64</labl>
+      </catgry>
+      <catgry>
+        <catValu>065</catValu>
+        <labl>65</labl>
+      </catgry>
+      <catgry>
+        <catValu>066</catValu>
+        <labl>66</labl>
+      </catgry>
+      <catgry>
+        <catValu>067</catValu>
+        <labl>67</labl>
+      </catgry>
+      <catgry>
+        <catValu>068</catValu>
+        <labl>68</labl>
+      </catgry>
+      <catgry>
+        <catValu>069</catValu>
+        <labl>69</labl>
+      </catgry>
+      <catgry>
+        <catValu>070</catValu>
+        <labl>70</labl>
+      </catgry>
+      <catgry>
+        <catValu>071</catValu>
+        <labl>71</labl>
+      </catgry>
+      <catgry>
+        <catValu>072</catValu>
+        <labl>72</labl>
+      </catgry>
+      <catgry>
+        <catValu>073</catValu>
+        <labl>73</labl>
+      </catgry>
+      <catgry>
+        <catValu>074</catValu>
+        <labl>74</labl>
+      </catgry>
+      <catgry>
+        <catValu>075</catValu>
+        <labl>75</labl>
+      </catgry>
+      <catgry>
+        <catValu>076</catValu>
+        <labl>76</labl>
+      </catgry>
+      <catgry>
+        <catValu>077</catValu>
+        <labl>77</labl>
+      </catgry>
+      <catgry>
+        <catValu>078</catValu>
+        <labl>78</labl>
+      </catgry>
+      <catgry>
+        <catValu>079</catValu>
+        <labl>79</labl>
+      </catgry>
+      <catgry>
+        <catValu>080</catValu>
+        <labl>80</labl>
+      </catgry>
+      <catgry>
+        <catValu>081</catValu>
+        <labl>81</labl>
+      </catgry>
+      <catgry>
+        <catValu>082</catValu>
+        <labl>82</labl>
+      </catgry>
+      <catgry>
+        <catValu>083</catValu>
+        <labl>83</labl>
+      </catgry>
+      <catgry>
+        <catValu>084</catValu>
+        <labl>84</labl>
+      </catgry>
+      <catgry>
+        <catValu>085</catValu>
+        <labl>85</labl>
+      </catgry>
+      <catgry>
+        <catValu>086</catValu>
+        <labl>86</labl>
+      </catgry>
+      <catgry>
+        <catValu>087</catValu>
+        <labl>87</labl>
+      </catgry>
+      <catgry>
+        <catValu>088</catValu>
+        <labl>88</labl>
+      </catgry>
+      <catgry>
+        <catValu>089</catValu>
+        <labl>89</labl>
+      </catgry>
+      <catgry>
+        <catValu>090</catValu>
+        <labl>90</labl>
+      </catgry>
+      <catgry>
+        <catValu>091</catValu>
+        <labl>91</labl>
+      </catgry>
+      <catgry>
+        <catValu>092</catValu>
+        <labl>92</labl>
+      </catgry>
+      <catgry>
+        <catValu>093</catValu>
+        <labl>93</labl>
+      </catgry>
+      <catgry>
+        <catValu>094</catValu>
+        <labl>94</labl>
+      </catgry>
+      <catgry>
+        <catValu>095</catValu>
+        <labl>95</labl>
+      </catgry>
+      <catgry>
+        <catValu>096</catValu>
+        <labl>96</labl>
+      </catgry>
+      <catgry>
+        <catValu>097</catValu>
+        <labl>97</labl>
+      </catgry>
+      <catgry>
+        <catValu>098</catValu>
+        <labl>98</labl>
+      </catgry>
+      <catgry>
+        <catValu>099</catValu>
+        <labl>99</labl>
+      </catgry>
+      <catgry>
+        <catValu>100</catValu>
+        <labl>100+</labl>
+      </catgry>
+      <catgry>
+        <catValu>999</catValu>
+        <labl>Not reported/missing</labl>
+      </catgry>
+      <concept vocab="IPUMS">Demographic Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="MARST" dcml="0" files="ExtractData" intrvl="discrete" name="MARST" rectype="P">
+      <location EndPos="28" StartPos="28" width="1"/>
+      <labl>Marital status [general version]</labl>
+      <txt><![CDATA[MARST describes the person's current marital status according to law or custom.  Individuals who remarried should report the status relevant to their most recent marriage.  Census instructions rarely explicitly limit marital status to strictly legal unions.
+
+Note regarding universe: The lowest age at which a person can be anything but "never married" varies among samples.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU (not in universe)</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>Single/never married</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Married/in union</labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl>Separated/divorced/spouse absent</labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl>Widowed</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown/missing</labl>
+      </catgry>
+      <concept vocab="IPUMS">Demographic Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="MARSTD" dcml="0" files="ExtractData" intrvl="discrete" name="MARSTD" rectype="P">
+      <location EndPos="31" StartPos="29" width="3"/>
+      <labl>Marital status [detailed version]</labl>
+      <txt><![CDATA[MARST describes the person's current marital status according to law or custom.  Individuals who remarried should report the status relevant to their most recent marriage.  Census instructions rarely explicitly limit marital status to strictly legal unions.
+
+Note regarding universe: The lowest age at which a person can be anything but "never married" varies among samples.]]></txt>
+      <catgry>
+        <catValu>000</catValu>
+        <labl>NIU (not in universe)</labl>
+      </catgry>
+      <catgry>
+        <catValu>100</catValu>
+        <labl>Single/never married</labl>
+      </catgry>
+      <catgry>
+        <catValu>110</catValu>
+        <labl>Engaged</labl>
+      </catgry>
+      <catgry>
+        <catValu>111</catValu>
+        <labl>Never married and never cohabited</labl>
+      </catgry>
+      <catgry>
+        <catValu>200</catValu>
+        <labl>Married or consensual union</labl>
+      </catgry>
+      <catgry>
+        <catValu>210</catValu>
+        <labl>Married, formally</labl>
+      </catgry>
+      <catgry>
+        <catValu>211</catValu>
+        <labl>Married, civil</labl>
+      </catgry>
+      <catgry>
+        <catValu>212</catValu>
+        <labl>Married, religious</labl>
+      </catgry>
+      <catgry>
+        <catValu>213</catValu>
+        <labl>Married, civil and religious</labl>
+      </catgry>
+      <catgry>
+        <catValu>214</catValu>
+        <labl>Married, civil or religious</labl>
+      </catgry>
+      <catgry>
+        <catValu>215</catValu>
+        <labl>Married, traditional/customary</labl>
+      </catgry>
+      <catgry>
+        <catValu>216</catValu>
+        <labl>Married, monogamous</labl>
+      </catgry>
+      <catgry>
+        <catValu>217</catValu>
+        <labl>Married, polygamous</labl>
+      </catgry>
+      <catgry>
+        <catValu>219</catValu>
+        <labl>Married, spouse absent (historical samples)</labl>
+      </catgry>
+      <catgry>
+        <catValu>220</catValu>
+        <labl>Consensual union</labl>
+      </catgry>
+      <catgry>
+        <catValu>300</catValu>
+        <labl>Separated/divorced/spouse absent</labl>
+      </catgry>
+      <catgry>
+        <catValu>310</catValu>
+        <labl>Separated or divorced</labl>
+      </catgry>
+      <catgry>
+        <catValu>320</catValu>
+        <labl>Separated or annulled</labl>
+      </catgry>
+      <catgry>
+        <catValu>330</catValu>
+        <labl>Separated</labl>
+      </catgry>
+      <catgry>
+        <catValu>331</catValu>
+        <labl>Separated legally</labl>
+      </catgry>
+      <catgry>
+        <catValu>332</catValu>
+        <labl>Separated de facto</labl>
+      </catgry>
+      <catgry>
+        <catValu>333</catValu>
+        <labl>Separated from marriage</labl>
+      </catgry>
+      <catgry>
+        <catValu>334</catValu>
+        <labl>Separated from consensual union</labl>
+      </catgry>
+      <catgry>
+        <catValu>335</catValu>
+        <labl>Separated from consensual union or marriage</labl>
+      </catgry>
+      <catgry>
+        <catValu>340</catValu>
+        <labl>Annulled</labl>
+      </catgry>
+      <catgry>
+        <catValu>350</catValu>
+        <labl>Divorced</labl>
+      </catgry>
+      <catgry>
+        <catValu>400</catValu>
+        <labl>Widowed</labl>
+      </catgry>
+      <catgry>
+        <catValu>410</catValu>
+        <labl>Widowed or divorced</labl>
+      </catgry>
+      <catgry>
+        <catValu>411</catValu>
+        <labl>Widowed from consensual union or marriage</labl>
+      </catgry>
+      <catgry>
+        <catValu>412</catValu>
+        <labl>Widowed from marriage</labl>
+      </catgry>
+      <catgry>
+        <catValu>413</catValu>
+        <labl>Widowed from consensual union</labl>
+      </catgry>
+      <catgry>
+        <catValu>420</catValu>
+        <labl>Widowed, divorced, or separated</labl>
+      </catgry>
+      <catgry>
+        <catValu>999</catValu>
+        <labl>Unknown/missing</labl>
+      </catgry>
+      <concept vocab="IPUMS">Demographic Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="EDATTAIN" dcml="0" files="ExtractData" intrvl="discrete" name="EDATTAIN" rectype="P">
+      <location EndPos="32" StartPos="32" width="1"/>
+      <labl>Educational attainment, international recode [general version]</labl>
+      <txt><![CDATA[EDATTAIN records the person's educational attainment in terms of the level of schooling completed (degree or other milestone). The emphasis on level completed is critical: a person attending the final year of secondary education receives the code for having completed lower secondary only -- and in some samples only primary. 
+
+EDATTAIN does not necessarily reflect any particular country's definition of the various levels of schooling in terms of terminology or the number of years of schooling.  EDATTAIN is an attempt to merge -- into a single, roughly comparable variable -- samples that provide degrees, ones that provide actual years of schooling, and those that have some of both. In addition to EDATTAIN, a country-specific education classification is provided which loses no information and reflects the particular educational system of that country (for example EDUCBR for Brazil, EDUCCL for Chile, and EDUCUS for the United States).  As always, users can refer to the original education source variables for each sample, if they wish.
+
+Many samples also give single years of schooling completed, recorded in YRSCHOOL.   Some samples provide educational information in a form that could not be incorporated into EDATTAIN.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU (not in universe)</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>Less than primary completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Primary completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl>Secondary completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>4</catValu>
+        <labl>University completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown</labl>
+      </catgry>
+      <concept vocab="IPUMS">Education Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="EDATTAIND" dcml="0" files="ExtractData" intrvl="discrete" name="EDATTAIND" rectype="P">
+      <location EndPos="35" StartPos="33" width="3"/>
+      <labl>Educational attainment, international recode [detailed version]</labl>
+      <txt><![CDATA[EDATTAIN records the person's educational attainment in terms of the level of schooling completed (degree or other milestone). The emphasis on level completed is critical: a person attending the final year of secondary education receives the code for having completed lower secondary only -- and in some samples only primary. 
+
+EDATTAIN does not necessarily reflect any particular country's definition of the various levels of schooling in terms of terminology or the number of years of schooling.  EDATTAIN is an attempt to merge -- into a single, roughly comparable variable -- samples that provide degrees, ones that provide actual years of schooling, and those that have some of both. In addition to EDATTAIN, a country-specific education classification is provided which loses no information and reflects the particular educational system of that country (for example EDUCBR for Brazil, EDUCCL for Chile, and EDUCUS for the United States).  As always, users can refer to the original education source variables for each sample, if they wish.
+
+Many samples also give single years of schooling completed, recorded in YRSCHOOL.   Some samples provide educational information in a form that could not be incorporated into EDATTAIN.]]></txt>
+      <catgry>
+        <catValu>000</catValu>
+        <labl>NIU (not in universe)</labl>
+      </catgry>
+      <catgry>
+        <catValu>100</catValu>
+        <labl>Less than primary completed (n.s.)</labl>
+      </catgry>
+      <catgry>
+        <catValu>110</catValu>
+        <labl>No schooling</labl>
+      </catgry>
+      <catgry>
+        <catValu>120</catValu>
+        <labl>Some primary completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>130</catValu>
+        <labl>Primary (4 yrs) completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>211</catValu>
+        <labl>Primary (5 yrs) completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>212</catValu>
+        <labl>Primary (6 yrs) completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>221</catValu>
+        <labl>Lower secondary general completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>222</catValu>
+        <labl>Lower secondary technical completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>311</catValu>
+        <labl>Secondary, general track completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>312</catValu>
+        <labl>Some college completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>320</catValu>
+        <labl>Secondary or post-secondary technical completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>321</catValu>
+        <labl>Secondary, technical track completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>322</catValu>
+        <labl>Post-secondary technical education</labl>
+      </catgry>
+      <catgry>
+        <catValu>400</catValu>
+        <labl>University completed</labl>
+      </catgry>
+      <catgry>
+        <catValu>999</catValu>
+        <labl>Unknown/missing</labl>
+      </catgry>
+      <concept vocab="IPUMS">Education Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+  </dataDscr>
+</codeBook>
