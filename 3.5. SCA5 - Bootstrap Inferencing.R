@@ -16,25 +16,12 @@
 #data
 #################################
 
-library(readxl)
+Specs_IDV <- read.csv("results/Specs_IDV.csv")[,-1]
+Specs_INO <- read.csv("results/Specs_INO.csv")[,-1]
+Specs_MAS <- read.csv("results/Specs_MAS.csv")[,-1]
+Specs_TER <- read.csv("results/Specs_TER.csv")[,-1]
 
-Priority <- 1
-Specs_IDV <- read.csv(paste("Results/Specs_IDV_P", Priority, ".csv", sep = ''))[,-1]
-Specs_INO <- read.csv(paste("Results/Specs_INO_P", Priority, ".csv", sep = ''))[,-1]
-Specs_MAS <- read.csv(paste("Results/Specs_MAS_P", Priority, ".csv", sep = ''))[,-1]
-Specs_TER <- read.csv(paste("Results/Specs_TER_P", Priority, ".csv", sep = ''))[,-1]
-
-#new specs added on 2022-09-28
-Specs_PDI <- read.csv(paste("Results/Raw SCA results/Specs_PDI_P", Priority, ".csv", sep = ''))[,-1]
-Specs_UAI <- read.csv(paste("Results/Raw SCA results/Specs_UAI_P", Priority, ".csv", sep = ''))[,-1]
-Specs_LTO <- read.csv(paste("Results/Raw SCA results/Specs_LTO_P", Priority, ".csv", sep = ''))[,-1]
-Specs_IDG <- read.csv(paste("Results/Raw SCA results/Specs_IDG_P", Priority, ".csv", sep = ''))[,-1]
-Specs_TGU <- read.csv(paste("Results/Raw SCA results/Specs_TGU_P", Priority, ".csv", sep = ''))[,-1]
-Specs_TGE <- read.csv(paste("Results/Raw SCA results/Specs_TGE_P", Priority, ".csv", sep = ''))[,-1]
-
-National_Data <- read_excel('Data/National_Data.xlsx')
-#make sure that all are numeric
-National_Data[3:52] <- lapply(National_Data[3:52],as.numeric)
+National_Data <- read.csv('data/all_national_data.csv')
 
 ######################################
 #functions
@@ -178,7 +165,7 @@ boot_and_save <- function(Results_Frame, Var_name = '', R = 500){
   Test_Results <- bootstrap_test(Specs_Frame = Results_Frame, R = R)
   #save the results
   #save bootstrap frames as well in case we need to go back to them
-  write.csv(Test_Results, paste("Results/Test_Results_", Var_name, '_P', Priority, ".csv", sep = ''))
+  write.csv(Test_Results, paste("results/Test_Results_", Var_name, ".csv", sep = ''))
   #output display
   Test_Results
 }
@@ -187,36 +174,7 @@ boot_and_save <- function(Results_Frame, Var_name = '', R = 500){
 #execute significance test and save in one go
 ######################################
 
-#split courage measures by age weighted and age unweightewd
-Cour_Age_Unweighted <- c('Courage.Mean.Unweighted', 'Courage.Mean.Male.Unweighted', 'Courage.Mean.Female.Unweighted', 
-                         'Courage.Mean.Weighted.Sex')
-Cour_Age_Weighted <- c('Courage.Mean.Weighted.Age', 'Courage.Mean.Male.Weighted.Age', 'Courage.Mean.Female.Weighted.Age',
-                       'Courage.Mean.Weighted.Age.Sex')
-
-#the unweighted
-boot_and_save(Results_Frame = Specs_IDV[Specs_IDV$x %in% Cour_Age_Unweighted,], Var_name = 'IDV_Age_Unweighted')
-boot_and_save(Results_Frame = Specs_MAS[Specs_MAS$x %in% Cour_Age_Unweighted,], Var_name = 'MAS_Age_Unweighted')
-boot_and_save(Results_Frame = Specs_TER[Specs_TER$x %in% Cour_Age_Unweighted,], Var_name = 'TER_Age_Unweighted')
-boot_and_save(Results_Frame = Specs_INO[Specs_INO$x %in% Cour_Age_Unweighted,], Var_name = 'INO_Age_Unweighted')
-
-#the Weighted
-boot_and_save(Results_Frame = Specs_IDV[Specs_IDV$x %in% Cour_Age_Weighted,], Var_name = 'IDV_Age_Weighted')
-boot_and_save(Results_Frame = Specs_MAS[Specs_MAS$x %in% Cour_Age_Weighted,], Var_name = 'MAS_Age_Weighted')
-boot_and_save(Results_Frame = Specs_TER[Specs_TER$x %in% Cour_Age_Weighted,], Var_name = 'TER_Age_Weighted')
-boot_and_save(Results_Frame = Specs_INO[Specs_INO$x %in% Cour_Age_Weighted,], Var_name = 'INO_Age_Weighted')
-
-#new vars 2022-09-28
-boot_and_save(Results_Frame = Specs_PDI[Specs_PDI$x %in% Cour_Age_Unweighted,], Var_name = 'PDI_Age_Unweighted')
-boot_and_save(Results_Frame = Specs_UAI[Specs_UAI$x %in% Cour_Age_Unweighted,], Var_name = 'UAI_Age_Unweighted')
-boot_and_save(Results_Frame = Specs_LTO[Specs_LTO$x %in% Cour_Age_Unweighted,], Var_name = 'LTO_Age_Unweighted')
-boot_and_save(Results_Frame = Specs_IDG[Specs_IDG$x %in% Cour_Age_Unweighted,], Var_name = 'IDG_Age_Unweighted')
-boot_and_save(Results_Frame = Specs_TGU[Specs_TGU$x %in% Cour_Age_Unweighted,], Var_name = 'TGU_Age_Unweighted')
-boot_and_save(Results_Frame = Specs_TGE[Specs_TGE$x %in% Cour_Age_Unweighted,], Var_name = 'TGE_Age_Unweighted')
-
-boot_and_save(Results_Frame = Specs_PDI[Specs_PDI$x %in% Cour_Age_Weighted,], Var_name = 'PDI_Age_Weighted')
-boot_and_save(Results_Frame = Specs_UAI[Specs_UAI$x %in% Cour_Age_Weighted,], Var_name = 'UAI_Age_Weighted')
-boot_and_save(Results_Frame = Specs_LTO[Specs_LTO$x %in% Cour_Age_Weighted,], Var_name = 'LTO_Age_Weighted')
-boot_and_save(Results_Frame = Specs_IDG[Specs_IDG$x %in% Cour_Age_Weighted,], Var_name = 'IDG_Age_Weighted')
-boot_and_save(Results_Frame = Specs_TGU[Specs_TGU$x %in% Cour_Age_Weighted,], Var_name = 'TGU_Age_Weighted')
-boot_and_save(Results_Frame = Specs_TGE[Specs_TGE$x %in% Cour_Age_Weighted,], Var_name = 'TGE_Age_Weighted')
-
+boot_and_save(Results_Frame = Specs_IDV, Var_name = 'IDV')
+boot_and_save(Results_Frame = Specs_MAS, Var_name = 'MAS')
+boot_and_save(Results_Frame = Specs_TER, Var_name = 'TER')
+boot_and_save(Results_Frame = Specs_INO, Var_name = 'INO')

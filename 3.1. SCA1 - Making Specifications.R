@@ -1,52 +1,50 @@
 #this file is to do the step 1 of our SCA: Generate Specifications
-#we aim to output a matrix of specifications to be then processed by another file to fill-in regression results
-
-#plan: import data, extract lists of measures for each constructs, write a function to turn constructs into specifications, 
-#run the function on our key variables, save the specification matrices
-
-
-#first, we need packages
-library(readxl)
-
-
-#####################
-#import relevant data file
-##########################
-
-Data_Codebook <- read_xlsx("Data/National Data Codebook.xlsx")
-
 
 ################################
-#first, lets have each construct's measures into lists from our code book
+#first, lets have each construct's measures into lists from our data
 ################################
-
-
-#set the priority limit, if 3, then 1-3 will all be counted in
-Priority <- 1
-
 
 #courage
-Courage_Measures <- subset(Data_Codebook$`Record Code`, Data_Codebook$Construct == "Courage" & 
-                             Data_Codebook$Priority <= Priority)
+Courage_Measures <- c("national_courage")
 #the 4 main dependent variables
-Individualism_Measures <- subset(Data_Codebook$`Record Code`, Data_Codebook$Construct == "Individualism" &
-                                   Data_Codebook$Priority <= Priority)
-Masculinity_Measures <- subset(Data_Codebook$`Record Code`, Data_Codebook$Construct == "Masculinity" &
-                                 Data_Codebook$Priority <= Priority)
-Terrorism_Measures <- subset(Data_Codebook$`Record Code`, Data_Codebook$Construct == "Terrorism" &
-                               Data_Codebook$Priority <= Priority)
-Innovation_Measures <- subset(Data_Codebook$`Record Code`, Data_Codebook$Construct == "Innovation" &
-                                Data_Codebook$Priority <= Priority)
-#control variables - we add a "Not_Controlling" option to help with enumerating all possible specifications
-Education_Measures <- c(subset(Data_Codebook$`Record Code`, Data_Codebook$Construct == "Education" &
-                                 Data_Codebook$Priority <= Priority),
-                        "Not_Controlling")
-Economics_Measures <- c(subset(Data_Codebook$`Record Code`, Data_Codebook$Construct == "Economics" &
-                                 Data_Codebook$Priority <= Priority),
-                        "Not_Controlling")
-Urbanisation_Measures <- c(subset(Data_Codebook$`Record Code`, Data_Codebook$Construct == "Urbanisation" &
-                                    Data_Codebook$Priority <= Priority),
-                           "Not_Controlling")
+Individualism_Measures <- c("ipums_idv", "hofstede_idv")
+Masculinity_Measures <- c("hofstede_mas")
+Terrorism_Measures <- c("global_terrorism_index")
+Innovation_Measures <- c("global_innovation_index")
+#control variables - we add a "not_controlling" option
+Education_Measures <- c(
+  "oecd_edu_population_to_primary",
+  "oecd_edu_population_to_tertiary",
+  "oecd_edu_population_to_secondary",
+  "un_edu_primary_complete",
+  "un_edu_primary_enroll",
+  "un_edu_secondary_enroll",
+  "un_edu_tertiary_enroll",
+  "wb_edu_literacy_adult",
+  "wb_edu_literacy_youth",
+  "wb_edu_primary_complete",
+  "wb_edu_primary_enroll",
+  "wb_edu_secondary_enroll",
+  "wb_edu_tertiary_enroll",
+  "ipums_edu_tertiary_attain",
+  "ipums_edu_adult_literacy",
+  "Not_Controlling"
+)
+Economics_Measures <- c(
+  "oecd_gdp", "oecd_gdp_per_cap",
+  "un_gdp_per_cap",
+  "wb_gdp_per_cap", "wb_gdp", "wb_gdp_per_cap_ppp", "wb_gdp_ppp",
+  "Not_Controlling"
+)
+Urbanisation_Measures <- c(
+  "un_urban_ratio",
+  "wb_urban_density",
+  "wb_urban_largest_city_ratio",
+  "wb_urban_big_city_ratio",
+  "wb_urban_population_ratio",
+  "ipums_urbanisation",
+  "Not_Controlling"
+)
 
 
 #####################################
@@ -115,33 +113,11 @@ Specs_MAS <- sca_specifications(x_measures = Courage_Measures, y_measures = Masc
 Specs_TER <- sca_specifications(x_measures = Courage_Measures, y_measures = Terrorism_Measures)
 Specs_INO <- sca_specifications(x_measures = Courage_Measures, y_measures = Innovation_Measures)
 
-#additional dependent measures added on 2022-09-28
-Specs_PDI <- sca_specifications(x_measures = Courage_Measures, y_measures = 'PowerDiss')
-Specs_UAI <- sca_specifications(x_measures = Courage_Measures, y_measures = 'UncertAvoid')
-Specs_LTO <- sca_specifications(x_measures = Courage_Measures, y_measures = 'LongTermO')
-Specs_IDG <- sca_specifications(x_measures = Courage_Measures, y_measures = 'Indulgence')
-Specs_TGU <- sca_specifications(x_measures = Courage_Measures, y_measures = 'Tightness.Uz')
-Specs_TGE <- sca_specifications(x_measures = Courage_Measures, y_measures = 'Tightness.Gelfand')
-
 ################################
 #and save the results
 #################################
 
-write.csv(Specs_IDV, paste("Results/Specs_IDV_P", Priority, ".csv", sep = ''))
-write.csv(Specs_INO, paste("Results/Specs_INO_P", Priority, ".csv", sep = ''))
-write.csv(Specs_TER, paste("Results/Specs_TER_P", Priority, ".csv", sep = ''))
-write.csv(Specs_MAS, paste("Results/Specs_MAS_P", Priority, ".csv", sep = ''))
-
-
-write.csv(Specs_PDI, paste("Results/Raw SCA results/Specs_PDI_P", Priority, ".csv", sep = ''))
-write.csv(Specs_UAI, paste("Results/Raw SCA results/Specs_UAI_P", Priority, ".csv", sep = ''))
-write.csv(Specs_LTO, paste("Results/Raw SCA results/Specs_LTO_P", Priority, ".csv", sep = ''))
-write.csv(Specs_IDG, paste("Results/Raw SCA results/Specs_IDG_P", Priority, ".csv", sep = ''))
-write.csv(Specs_TGU, paste("Results/Raw SCA results/Specs_TGU_P", Priority, ".csv", sep = ''))
-write.csv(Specs_TGE, paste("Results/Raw SCA results/Specs_TGE_P", Priority, ".csv", sep = ''))
-
-
-
-
-
-
+write.csv(Specs_IDV, "results/Specs_IDV.csv")
+write.csv(Specs_INO, "results/Specs_INO.csv")
+write.csv(Specs_TER, "results/Specs_TER.csv")
+write.csv(Specs_MAS, "results/Specs_MAS.csv")

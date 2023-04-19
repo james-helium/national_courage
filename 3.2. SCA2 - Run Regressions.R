@@ -10,25 +10,14 @@
 #we will need our main data file and our specification matrices
 ##############################
 
-library(readxl)
-National_Data <- read_excel("Data/National_Data.xlsx")
-#make sure that all are numeric
-National_Data[3:52] <- lapply(National_Data[3:52],as.numeric)
+National_Data <- read.csv("data/all_national_data.csv")
+
 #and our specification matrices, removing that first weird index column
+Specs_IDV <- read.csv("Results/Specs_IDV.csv")[,-1]
+Specs_INO <- read.csv("Results/Specs_INO.csv")[,-1]
+Specs_MAS <- read.csv("Results/Specs_MAS.csv")[,-1]
+Specs_TER <- read.csv("Results/Specs_TER.csv")[,-1]
 
-Priority <- 1
-Specs_IDV <- read.csv(paste("Results/Specs_IDV_P", Priority, ".csv", sep = ''))[,-1]
-Specs_INO <- read.csv(paste("Results/Specs_INO_P", Priority, ".csv", sep = ''))[,-1]
-Specs_MAS <- read.csv(paste("Results/Specs_MAS_P", Priority, ".csv", sep = ''))[,-1]
-Specs_TER <- read.csv(paste("Results/Specs_TER_P", Priority, ".csv", sep = ''))[,-1]
-
-#new specs added on 2022-09-28
-Specs_PDI <- read.csv(paste("Results/Raw SCA results/Specs_PDI_P", Priority, ".csv", sep = ''))[,-1]
-Specs_UAI <- read.csv(paste("Results/Raw SCA results/Specs_UAI_P", Priority, ".csv", sep = ''))[,-1]
-Specs_LTO <- read.csv(paste("Results/Raw SCA results/Specs_LTO_P", Priority, ".csv", sep = ''))[,-1]
-Specs_IDG <- read.csv(paste("Results/Raw SCA results/Specs_IDG_P", Priority, ".csv", sep = ''))[,-1]
-Specs_TGU <- read.csv(paste("Results/Raw SCA results/Specs_TGU_P", Priority, ".csv", sep = ''))[,-1]
-Specs_TGE <- read.csv(paste("Results/Raw SCA results/Specs_TGE_P", Priority, ".csv", sep = ''))[,-1]
 
 ############################
 #first, let's create a function to do this generically to save copying times
@@ -107,12 +96,11 @@ Specs_INO <- sca_regression(Specs_INO)
 Specs_MAS <- sca_regression(Specs_MAS)
 Specs_TER <- sca_regression(Specs_TER)
 
-Specs_PDI <- sca_regression(Specs_PDI)
-Specs_UAI <- sca_regression(Specs_UAI)
-Specs_LTO <- sca_regression(Specs_LTO)
-Specs_IDG <- sca_regression(Specs_IDG)
-Specs_TGU <- sca_regression(Specs_TGU)
-Specs_TGE <- sca_regression(Specs_TGE)
+# remove rows where n is < 10
+Specs_IDV <- Specs_IDV[Specs_IDV$n > 10,]
+Specs_INO <- Specs_INO[Specs_INO$n > 10,]
+Specs_MAS <- Specs_MAS[Specs_MAS$n > 10,]
+Specs_TER <- Specs_TER[Specs_TER$n > 10,]
 
 
 ############################
@@ -120,15 +108,7 @@ Specs_TGE <- sca_regression(Specs_TGE)
 ##################################
 
 
-write.csv(Specs_IDV, paste("Results/Specs_IDV_P", Priority, ".csv", sep = ''))
-write.csv(Specs_INO, paste("Results/Specs_INO_P", Priority, ".csv", sep = ''))
-write.csv(Specs_TER, paste("Results/Specs_TER_P", Priority, ".csv", sep = ''))
-write.csv(Specs_MAS, paste("Results/Specs_MAS_P", Priority, ".csv", sep = ''))
-
-write.csv(Specs_PDI, paste("Results/Raw SCA results/Specs_PDI_P", Priority, ".csv", sep = ''))
-write.csv(Specs_UAI, paste("Results/Raw SCA results/Specs_UAI_P", Priority, ".csv", sep = ''))
-write.csv(Specs_LTO, paste("Results/Raw SCA results/Specs_LTO_P", Priority, ".csv", sep = ''))
-write.csv(Specs_IDG, paste("Results/Raw SCA results/Specs_IDG_P", Priority, ".csv", sep = ''))
-write.csv(Specs_TGU, paste("Results/Raw SCA results/Specs_TGU_P", Priority, ".csv", sep = ''))
-write.csv(Specs_TGE, paste("Results/Raw SCA results/Specs_TGE_P", Priority, ".csv", sep = ''))
-
+write.csv(Specs_IDV, "Results/Specs_IDV.csv")
+write.csv(Specs_INO, "Results/Specs_INO.csv")
+write.csv(Specs_TER, "Results/Specs_TER.csv")
+write.csv(Specs_MAS, "Results/Specs_MAS.csv")
