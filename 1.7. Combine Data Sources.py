@@ -1,4 +1,5 @@
 # this script combines the data sources into one data frame
+##### IMPORTANT: manually add hofstede, terrorism, innovation data before the next step #####
 
 # initialise
 

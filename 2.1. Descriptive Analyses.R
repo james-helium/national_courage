@@ -1,6 +1,6 @@
-#this file is to produce initial descriptive analyses:
-#1) world map
-#2) descriptive stats tables
+#this file is to produce initial descriptive analyses
+
+###### IMPORTANT: Manualy add hofstede, innovation, terrorism data prior
 
 ###############################
 #LIBRARIES AND DATA

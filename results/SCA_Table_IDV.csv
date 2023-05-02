@@ -1,35 +1,35 @@
-"","Construct","Variable Choice","n(Specification)","%Significant","Mean Effect","Mean R-squard"
-"1","y","ipums idv",846,25.531914893617,-0.170944372061341,0.332921780547771
-"2","y","hofstede idv",846,7.80141843971631,-0.113477022966143,0.283309658252389
-"3","Courage","national courage",1692,16.6666666666667,-0.142210697513742,0.30811571940008
-"4","Control Education","oecd edu population to primary",96,0,0.078038860222623,0.298532935319632
-"5","Control Education","oecd edu population to tertiary",96,0,0.0120038524622706,0.292876897020164
-"6","Control Education","oecd edu population to secondary",96,0,-0.00977605324177326,0.174255427996291
-"7","Control Education","un edu primary complete",108,28.7037037037037,-0.224519593636918,0.244151355695502
-"8","Control Education","un edu primary enroll",108,20.3703703703704,-0.200495612329196,0.309809509621732
-"9","Control Education","un edu secondary enroll",108,29.6296296296296,-0.199651533881837,0.287032340202954
-"10","Control Education","un edu tertiary enroll",108,0,-0.121696603051582,0.310883500348384
-"11","Control Education","wb edu literacy adult",108,0,-0.0997608495503749,0.29043231707654
-"12","Control Education","wb edu literacy youth",108,27.7777777777778,-0.186522980806489,0.300601996184439
-"13","Control Education","wb edu primary complete",108,44.4444444444444,-0.265717591781725,0.293834530150168
-"14","Control Education","wb edu primary enroll",108,37.037037037037,-0.257617781875591,0.314169916725028
-"15","Control Education","wb edu secondary enroll",108,1.85185185185185,-0.0957743820851698,0.440469153542111
-"16","Control Education","wb edu tertiary enroll",108,6.48148148148148,-0.152535709392946,0.306050704829753
-"17","Control Education","ipums edu tertiary attain",108,29.6296296296296,-0.224514432388353,0.322585354458772
-"18","Control Education","ipums edu adult literacy",108,0,-0.0736051501824632,0.478969665635109
-"19","Control Education","Not Controlling",108,35.1851851851852,-0.19690351514653,0.247564583609802
-"20","Control Economics","oecd gdp",192,0,-0.0683255486227327,0.083849194342627
-"21","Control Economics","oecd gdp per cap",192,0,-0.00606901051429833,0.237185345301475
-"22","Control Economics","un gdp per cap",218,20.6422018348624,-0.16862557059304,0.451193935091782
-"23","Control Economics","wb gdp per cap",218,26.1467889908257,-0.184177988035353,0.268467481503676
-"24","Control Economics","wb gdp",218,22.9357798165138,-0.164246678088013,0.443302352726795
-"25","Control Economics","wb gdp per cap ppp",218,7.3394495412844,-0.133174428550091,0.426147012805751
-"26","Control Economics","wb gdp ppp",218,23.8532110091743,-0.199580899968782,0.266887801295445
-"27","Control Economics","Not Controlling",218,28.4403669724771,-0.188436383567204,0.252685662508975
-"28","Control Urbanisation","wb urban density",256,16.796875,-0.148356753700324,0.293497026186453
-"29","Control Urbanisation","wb urban largest city ratio",256,22.265625,-0.141962121168043,0.324775669831448
-"30","Control Urbanisation","wb urban big city ratio",256,24.21875,-0.158679683582965,0.308437223117216
-"31","Control Urbanisation","wb urban population ratio",256,11.328125,-0.132335935336627,0.284330562891001
-"32","Control Urbanisation","ipums urbanisation",256,10.15625,-0.117921947232877,0.358896836804361
-"33","Control Urbanisation","Not Controlling",256,20.703125,-0.152078567534826,0.279315524890533
-"34","Control Urbanisation","un urban ratio",156,7.69230769230769,-0.145376525660268,0.307199161745878
+Construct,Variable Choice,n(Specification),%Significant,Mean Effect,Mean R-squard
+y,ipums idv,846,40.19,-0.24,0.35
+y,hofstede idv,846,2.13,0.07,0.28
+Courage,national courage,1692,21.16,-0.08,0.31
+Control Education,oecd edu population to primary,96,5.21,0.12,0.31
+Control Education,oecd edu population to tertiary,96,0.00,0.00,0.30
+Control Education,oecd edu population to secondary,96,3.13,0.12,0.20
+Control Education,un edu primary complete,108,16.67,-0.11,0.22
+Control Education,un edu primary enroll,108,19.44,-0.08,0.30
+Control Education,un edu secondary enroll,108,17.59,-0.12,0.28
+Control Education,un edu tertiary enroll,108,16.67,-0.06,0.32
+Control Education,wb edu literacy adult,108,25.00,-0.14,0.31
+Control Education,wb edu literacy youth,108,27.78,-0.17,0.29
+Control Education,wb edu primary complete,108,38.89,-0.21,0.29
+Control Education,wb edu primary enroll,108,27.78,-0.15,0.31
+Control Education,wb edu secondary enroll,108,37.96,-0.08,0.47
+Control Education,wb edu tertiary enroll,108,18.52,-0.08,0.31
+Control Education,ipums edu tertiary attain,108,20.37,-0.09,0.31
+Control Education,ipums edu adult literacy,108,38.89,-0.11,0.51
+Control Education,Not Controlling,108,18.52,-0.11,0.24
+Control Economics,oecd gdp,192,1.56,0.04,0.08
+Control Economics,oecd gdp per cap,192,0.00,-0.02,0.25
+Control Economics,un gdp per cap,218,36.24,-0.18,0.47
+Control Economics,wb gdp per cap,218,22.94,-0.08,0.26
+Control Economics,wb gdp,218,36.24,-0.18,0.46
+Control Economics,wb gdp per cap ppp,218,31.19,-0.11,0.44
+Control Economics,wb gdp ppp,218,17.43,-0.06,0.26
+Control Economics,Not Controlling,218,18.81,-0.05,0.24
+Control Urbanisation,wb urban density,256,19.92,-0.08,0.29
+Control Urbanisation,wb urban largest city ratio,256,17.19,-0.12,0.32
+Control Urbanisation,wb urban big city ratio,256,24.61,-0.04,0.31
+Control Urbanisation,wb urban population ratio,256,19.53,-0.07,0.28
+Control Urbanisation,ipums urbanisation,256,23.83,0.00,0.38
+Control Urbanisation,Not Controlling,256,22.66,-0.09,0.28
+Control Urbanisation,un urban ratio,156,19.87,-0.22,0.33
