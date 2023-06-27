@@ -13,6 +13,11 @@ Specs_IDV <- read.csv("results/Specs_IDV.csv")[, -1]
 Specs_INO <- read.csv("results/Specs_INO.csv")[, -1]
 Specs_MAS <- read.csv("results/Specs_MAS.csv")[, -1]
 Specs_TER <- read.csv("results/Specs_TER.csv")[, -1]
+Specs_PDI <- read.csv("results/Specs_PDI.csv")[, -1]
+Specs_UAI <- read.csv("results/Specs_UAI.csv")[, -1]
+Specs_LTO <- read.csv("results/Specs_LTO.csv")[, -1]
+Specs_IDG <- read.csv("results/Specs_IDG.csv")[, -1]
+Specs_TLI <- read.csv("results/Specs_TLI.csv")[, -1]
 
 
 ##################################################
@@ -137,6 +142,11 @@ Plot_IDV <- sca_combine(Specs_IDV, "Individualism")
 Plot_MAS <- sca_combine(Specs_MAS, "Masculinity")
 Plot_TER <- sca_combine(Specs_TER, "Terrorism")
 Plot_INO <- sca_combine(Specs_INO, "Innovation")
+Plot_PDI <- sca_combine(Specs_PDI, "Power Distance")
+Plot_UAI <- sca_combine(Specs_UAI, "Uncertainty Avoidance")
+Plot_LTO <- sca_combine(Specs_LTO, "Longterm Orientation")
+Plot_IDG <- sca_combine(Specs_IDG, "Indulgence")
+Plot_TLI <- sca_combine(Specs_TLI, "Tightness/Looseness")
 
 
 ###################################################
@@ -148,4 +158,9 @@ Plot_IDV
 Plot_MAS
 Plot_TER
 Plot_INO
+Plot_PDI
+Plot_UAI
+Plot_LTO
+Plot_IDG
+Plot_TLI
 dev.off()
