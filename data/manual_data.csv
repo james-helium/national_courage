@@ -1,81 +1,81 @@
-Country Name,Country Code,global_terrorism_index,hofstede_idv,hofstede_mas,global_innovation_index
-Argentina,ARG,1.024,46,56,28.33
-Australia,AUS,2.148,90,61,48.35
-Austria,AUT,1.016,55,79,50.13
-Bangladesh,BGD,4.909,20,55,20.39
-Belarus,BLR,0,,,31.27
-Belgium,BEL,3.043,75,52,49.13
-Bosnia and Herzegovina,BIH,0.677,,,28.99
-Brazil,BRA,2.443,38,49,31.94
-Brunei Darussalam,BRN,,,,29.82
-Bulgaria,BGR,0.172,30,40,39.98
-Canada,CAN,3.171,80,52,52.26
-Chile,CHL,4.031,23,28,33.86
-China,CHN,3.587,20,66,53.28
-Colombia,COL,6.1,13,64,30.84
-Costa Rica,CRI,1.066,15,21,33.51
-Croatia,HRV,0,33,40,37.27
-Czechia,CZE,0.315,59,57,48.34
-Denmark,DNK,1.484,74,16,57.53
-Ecuador,ECU,2.606,8,63,24.11
-Egypt,EGY,6.419,,,24.23
-Estonia,EST,0.057,60,30,48.28
-Finland,FIN,1.721,63,26,57.02
-France,FRA,4.614,71,43,53.66
-Germany,DEU,3.965,67,66,56.55
-Greece,GRC,4.182,35,57,36.79
-Hong Kong,HKG,,25,57,54.24
-Hungary,HUN,0.551,80,88,41.53
-Iceland,ISL,0,,,49.23
-India,IND,7.353,48,56,35.59
-Indonesia,IDN,4.629,14,43,26.49
-Iran,IRN,4.157,41,43,30.89
-Ireland,IRL,2.845,70,68,53.05
-Israel,ISR,4.522,54,47,53.55
-Italy,ITA,3.043,76,70,45.74
-Japan,JPN,2.014,46,95,52.7
-Kenya,KEN,5.644,27,41,26.13
-Kuwait,KWT,1.795,,,28.4
-Latvia,LVA,0.115,70,9,41.11
-Lebanon,LBN,3.661,,,26.02
-Lithuania,LTU,0.229,60,19,39.18
-Malaysia,MYS,2.09,26,50,42.42
-Malta,MLT,,59,47,46.39
-Mexico,MEX,4.316,30,69,33.6
-Morocco,MAR,0.565,46,53,28.97
-Netherlands,NLD,2.689,80,14,58.76
-New Zealand,NZL,4.337,79,58,47.01
-Norway,NOR,1.297,69,8,49.29
-Pakistan,PAK,7.541,14,50,22.31
-Panama,PAN,0.019,11,44,29.04
-Peru,PER,2.141,16,42,28.79
-Philippines,PHL,7.099,32,64,35.19
-Poland,POL,0.239,60,64,39.95
-Portugal,PRT,0,27,31,43.51
-Puerto Rico,PRI,,,,
-Qatar,QAT,0.014,,,30.81
-Romania,ROU,0,30,42,35.95
-Russia,RUS,4.542,39,36,35.63
-Samoa,WSM,,,,
-Saudi Arabia,SAU,5,38,52,30.94
-Serbia,SRB,0.057,25,43,34.33
-Singapore,SGP,0,20,48,56.61
-Slovakia,SVK,0.029,52,110,39.7
-Slovenia,SVN,0,27,19,42.91
-South Africa,ZAF,4.258,65,63,32.67
-South Korea,KOR,0.656,18,39,56.11
-Spain,ESP,2.81,51,42,45.6
-Sri Lanka,LKA,6.065,,,23.78
-Sweden,SWE,2.892,71,5,62.47
-Switzerland,CHE,0.286,67,65,66.08
-Taiwan,TWN,0.607,17,45,
-Thailand,THA,5.783,20,34,36.68
-Trinidad and Tobago,TTO,0.162,16,58,24.14
-Turkey,TUR,6.11,37,45,34.9
-Ukraine,UKR,4.692,,,36.32
-United Arab Emirates,ARE,0,38,53,41.79
-United Kingdom,GBR,5.161,89,66,59.78
-United States,USA,5.26,98,62,60.56
-Uruguay,URY,0.086,36,38,30.84
-Venezuela,VEN,3.658,12,73,
-Vietnam,VNM,0.42,20,40,37.12
+Country Name,Country Code,global_terrorism_index,hofstede_idv,hofstede_mas,global_innovation_index,hostede_pwd,hofstede_una,hofstede_lto,hofstede_idg,uz_tightloose,eriksson_tightloose
+Argentina,ARG,1.024,46,56,28.33,49,86,20,62,75,1.56
+Australia,AUS,2.148,90,61,48.35,38,51,21,71,,1.9
+Austria,AUT,1.016,55,79,50.13,11,70,60,63,75.8,2.1
+Bangladesh,BGD,4.909,20,55,20.39,80,60,47,20,6.6,
+Belarus,BLR,0,25,20,31.27,95,95,81,15,60.5,
+Belgium,BEL,3.043,75,52,49.13,65,94,82,57,119.8,
+Bosnia and Herzegovina,BIH,0.677,22,48,28.99,90,87,70,44,51.9,1.63
+Brazil,BRA,2.443,38,49,31.94,60,76,44,59,,1.69
+Brunei Darussalam,BRN,,,,29.82,,,,,,
+Bulgaria,BGR,0.172,30,40,39.98,70,85,69,16,60.4,
+Canada,CAN,3.171,80,52,52.26,39,48,36,68,84.6,1.83
+Chile,CHL,4.031,23,28,33.86,63,86,31,68,86.8,1.68
+China,CHN,3.587,20,66,53.28,80,30,87,24,35.3,2.05
+Colombia,COL,6.1,13,64,30.84,67,80,13,83,,1.48
+Costa Rica,CRI,1.066,15,21,33.51,35,86,,,,
+Croatia,HRV,0,33,40,37.27,73,80,58,33,55,
+Czechia,CZE,0.315,59,57,48.34,57,74,70,29,59.6,1.63
+Denmark,DNK,1.484,74,16,57.53,18,23,35,70,65.5,
+Ecuador,ECU,2.606,8,63,24.11,78,67,,,,1.82
+Egypt,EGY,6.419,37,55,24.23,80,55,42,0,3.9,
+Estonia,EST,0.057,60,30,48.28,40,60,82,16,55.4,1.62
+Finland,FIN,1.721,63,26,57.02,33,59,38,57,74.5,1.75
+France,FRA,4.614,71,43,53.66,68,86,63,48,99.6,
+Germany,DEU,3.965,67,66,56.55,35,65,83,40,82.9,2.03
+Greece,GRC,4.182,35,57,36.79,60,100,45,50,58.3,1.71
+Hong Kong,HKG,,25,57,54.24,68,29,61,17,,
+Hungary,HUN,0.551,80,88,41.53,46,82,58,31,42.8,1.46
+Iceland,ISL,0,60,10,49.23,30,50,28,67,51.2,1.94
+India,IND,7.353,48,56,35.59,77,40,51,26,43.7,2.48
+Indonesia,IDN,4.629,14,43,26.49,78,48,62,38,3.1,2.32
+Iran,IRN,4.157,41,43,30.89,58,59,14,40,31.5,2.25
+Ireland,IRL,2.845,70,68,53.05,28,35,24,65,71.2,1.8
+Israel,ISR,4.522,54,47,53.55,13,81,38,,,1.66
+Italy,ITA,3.043,76,70,45.74,50,75,61,30,67.8,1.87
+Japan,JPN,2.014,46,95,52.7,54,92,88,42,43.3,2.09
+Kenya,KEN,5.644,27,41,26.13,70,50,,,,2.36
+Kuwait,KWT,1.795,25,40,28.4,90,80,,,,
+Latvia,LVA,0.115,70,9,41.11,44,63,69,13,42.7,1.88
+Lebanon,LBN,3.661,43,48,26.02,62,57,22,10,,
+Lithuania,LTU,0.229,60,19,39.18,42,65,82,16,54.4,
+Malaysia,MYS,2.09,26,50,42.42,100,36,41,57,,0.47
+Malta,MLT,,59,47,46.39,56,96,47,66,28.1,
+Mexico,MEX,4.316,30,69,33.6,81,82,24,97,74.7,1.69
+Morocco,MAR,0.565,46,53,28.97,70,68,14,25,0,
+Netherlands,NLD,2.689,80,14,58.76,38,53,67,68,78.9,1.59
+New Zealand,NZL,4.337,79,58,47.01,22,49,33,75,,
+Norway,NOR,1.297,69,8,49.29,31,50,35,55,,
+Pakistan,PAK,7.541,14,50,22.31,55,70,50,0,0,
+Panama,PAN,0.019,11,44,29.04,95,86,,,,
+Peru,PER,2.141,16,42,28.79,64,87,25,46,52.3,1.7
+Philippines,PHL,7.099,32,64,35.19,94,44,27,42,31.5,
+Poland,POL,0.239,60,64,39.95,68,93,38,29,42.8,1.7
+Portugal,PRT,0,27,31,43.51,63,99,28,33,87.4,2
+Puerto Rico,PRI,,27,56,,68,38,0,90,63.1,
+Qatar,QAT,0.014,25,55,30.81,93,80,,,,2.5
+Romania,ROU,0,30,42,35.95,90,90,52,20,42.4,
+Russia,RUS,4.542,39,36,35.63,93,95,81,20,57.2,1.67
+Samoa,WSM,,,,,,,,,,
+Saudi Arabia,SAU,5,38,52,30.94,72,64,27,14,22.4,2.4
+Serbia,SRB,0.057,25,43,34.33,86,92,52,28,61.8,
+Singapore,SGP,0,20,48,56.61,74,8,72,46,55.2,2.24
+Slovakia,SVK,0.029,52,110,39.7,100,51,77,28,59,1.71
+Slovenia,SVN,0,27,19,42.91,71,88,49,48,55.1,
+South Africa,ZAF,4.258,65,63,32.67,49,49,34,63,67.6,
+South Korea,KOR,0.656,18,39,56.11,60,85,100,29,20.1,2.09
+Spain,ESP,2.81,51,42,45.6,57,86,48,44,83.9,1.71
+Sri Lanka,LKA,6.065,35,10,23.78,80,45,45,,,2.32
+Sweden,SWE,2.892,71,5,62.47,31,29,53,78,87.9,2.2
+Switzerland,CHE,0.286,67,65,66.08,34,58,74,66,,
+Taiwan,TWN,0.607,17,45,,58,69,93,49,,
+Thailand,THA,5.783,20,34,36.68,64,64,32,45,,2.13
+Trinidad and Tobago,TTO,0.162,16,58,24.14,47,55,13,80,,1.8
+Turkey,TUR,6.11,37,45,34.9,66,85,46,49,12.5,2.17
+Ukraine,UKR,4.692,25,27,36.32,92,95,86,14,56.9,1.74
+United Arab Emirates,ARE,0,38,53,41.79,74,66,22,22,,
+United Kingdom,GBR,5.161,89,66,59.78,35,35,51,69,89.3,1.77
+United States,USA,5.26,98,62,60.56,40,46,26,68,58,1.82
+Uruguay,URY,0.086,36,38,30.84,61,98,26,53,,
+Venezuela,VEN,3.658,12,73,,81,76,16,100,39.2,
+Vietnam,VNM,0.42,20,40,37.12,70,30,57,35,35.9,2.19
