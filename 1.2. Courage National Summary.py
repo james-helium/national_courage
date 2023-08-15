@@ -105,6 +105,13 @@ un_populations = un_populations.loc[filtered_full_sample["geo_country"].unique()
 filtered_full_sample["demo_age"] = pd.to_numeric(
     filtered_full_sample["demo_age"], errors="coerce"
 )
+
+# the previous script forgot to filter lower-age ranges, so we do it here
+filtered_full_sample = filtered_full_sample[filtered_full_sample.demo_age >= 10].copy()
+print(filtered_full_sample.demo_age.describe())
+print(filtered_full_sample.groupby("demo_gender").demo_age.describe())
+print(filtered_full_sample.groupby("geo_country").count().demo_age)
+
 filtered_full_sample["demo_age"] = pd.cut(
     filtered_full_sample["demo_age"],
     bins=[0, 14, 19, 24, 49, 69, 99],
