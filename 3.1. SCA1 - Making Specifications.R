@@ -52,6 +52,28 @@ Urbanisation_Measures <- c(
   "Not_Controlling"
 )
 
+# additional exploratory dvs
+big_five_openness <- c("allik_big_five_openness")
+big_five_conscientiousness <- c("allik_big_five_conscientiousness")
+big_five_extraversion <- c("allik_big_five_extraversion")
+big_five_agreeableness <- c("allik_big_five_agreeableness")
+big_five_neuroticism <- c("allik_big_five_neuroticism")
+global_giving_index_rank <- c("global_giving_index_rank")
+future_orientation <- c(
+  "GLOBE_future_orientation_societal_practices",
+  "GLOBE_future_orientation_societal_values"
+)
+humane_orientation <- c(
+  "GLOBE_humane_orientation_societal_practices",
+  "GLOBE_humane_orientation_societal_values"
+)
+performance_orientation <- c(
+  "GLOBE_performance_orientation_societal_practices",
+  "GLOBE_performance_orientation_societal_values"
+)
+rosenberg_self_esteem <- c("rosenberg_self_esteem")
+
+
 
 #####################################
 # create a function for generate specification matrix
@@ -141,6 +163,22 @@ Specs_TLI <- sca_specifications(x_measures = Courage_Measures, y_measures = Tigh
 Specs_TER <- sca_specifications(x_measures = Courage_Measures, y_measures = Terrorism_Measures)
 Specs_INO <- sca_specifications(x_measures = Courage_Measures, y_measures = Innovation_Measures)
 
+Specs_B5O <- sca_specifications(x_measures = Courage_Measures, y_measures = big_five_openness)
+Specs_B5C <- sca_specifications(x_measures = Courage_Measures, y_measures = big_five_conscientiousness)
+Specs_B5E <- sca_specifications(x_measures = Courage_Measures, y_measures = big_five_extraversion)
+Specs_B5A <- sca_specifications(x_measures = Courage_Measures, y_measures = big_five_agreeableness)
+Specs_B5N <- sca_specifications(x_measures = Courage_Measures, y_measures = big_five_neuroticism)
+
+Specs_GGI <- sca_specifications(x_measures = Courage_Measures, y_measures = global_giving_index_rank)
+Specs_FTO <- sca_specifications(x_measures = Courage_Measures, y_measures = future_orientation)
+Specs_HMO <- sca_specifications(x_measures = Courage_Measures, y_measures = humane_orientation)
+Specs_PFO <- sca_specifications(x_measures = Courage_Measures, y_measures = performance_orientation)
+Specs_RSE <- sca_specifications(x_measures = Courage_Measures, y_measures = rosenberg_self_esteem)
+
+Specs_FTO_P <- sca_specifications(x_measures = Courage_Measures, y_measures = c("GLOBE_future_orientation_societal_practices"))
+Specs_HMO_P <- sca_specifications(x_measures = Courage_Measures, y_measures = c("GLOBE_humane_orientation_societal_practices"))
+Specs_PFO_P <- sca_specifications(x_measures = Courage_Measures, y_measures = c("GLOBE_performance_orientation_societal_practices"))
+
 ################################
 # and save the results
 #################################
@@ -155,3 +193,19 @@ write.csv(Specs_UAI, "results/Specs_UAI.csv")
 write.csv(Specs_LTO, "results/Specs_LTO.csv")
 write.csv(Specs_IDG, "results/Specs_IDG.csv")
 write.csv(Specs_TLI, "results/Specs_TLI.csv")
+
+write.csv(Specs_B5O, "results/Specs_B5O.csv")
+write.csv(Specs_B5C, "results/Specs_B5C.csv")
+write.csv(Specs_B5E, "results/Specs_B5E.csv")
+write.csv(Specs_B5A, "results/Specs_B5A.csv")
+write.csv(Specs_B5N, "results/Specs_B5N.csv")
+
+write.csv(Specs_GGI, "results/Specs_GGI.csv")
+write.csv(Specs_FTO, "results/Specs_FTO.csv")
+write.csv(Specs_HMO, "results/Specs_HMO.csv")
+write.csv(Specs_PFO, "results/Specs_PFO.csv")
+write.csv(Specs_RSE, "results/Specs_RSE.csv")
+
+write.csv(Specs_FTO_P, "results/Specs_FTO_P.csv")
+write.csv(Specs_HMO_P, "results/Specs_HMO_P.csv")
+write.csv(Specs_PFO_P, "results/Specs_PFO_P.csv")

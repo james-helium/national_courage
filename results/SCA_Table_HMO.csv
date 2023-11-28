@@ -1,0 +1,35 @@
+"","Construct","Variable Choice","n(Specification)","%Significant","Mean Effect","Mean R-squard"
+"1","y","GLOBE humane orientation societal practices",803,0,0.127070025439527,0.0672022222124925
+"2","y","GLOBE humane orientation societal values",803,3.36239103362391,0.245802466654875,0.0120347060563032
+"3","Courage","national courage",1606,1.68119551681196,0.186436246047201,0.0396184641343979
+"4","Control Education","oecd edu population to primary",96,0,0.262021917513568,0.0614397158442547
+"5","Control Education","oecd edu population to tertiary",96,0,0.184934282155253,0.0255566780876248
+"6","Control Education","oecd edu population to secondary",96,0,0.10949525739138,0.107699636039158
+"7","Control Education","un edu primary complete",106,0,0.108158480721772,0.0122151896998837
+"8","Control Education","un edu primary enroll",108,0,0.140669754889069,-0.0509306335104767
+"9","Control Education","un edu secondary enroll",108,0,0.121115162561532,-0.0417772751082708
+"10","Control Education","un edu tertiary enroll",108,0,0.102824785563284,0.044000248506813
+"11","Control Education","wb edu literacy adult",96,0,0.09912405789294,0.0426867113332255
+"12","Control Education","wb edu literacy youth",96,0,0.0752502873701946,0.0739798039630492
+"13","Control Education","wb edu primary complete",96,6.25,0.327446635905466,0.0548052440374822
+"14","Control Education","wb edu primary enroll",96,0,0.297259265129866,0.0160740337551156
+"15","Control Education","wb edu secondary enroll",96,19.7916666666667,0.276819411541522,0.0751612965547052
+"16","Control Education","wb edu tertiary enroll",108,1.85185185185185,0.17988627013249,0.0678121973879278
+"17","Control Education","ipums edu tertiary attain",96,0,0.273352815337185,0.0565533359273493
+"18","Control Education","ipums edu adult literacy",96,0,0.241913648336062,0.106552643719706
+"19","Control Education","Not Controlling",108,0,0.212731106967023,0.00648407163636695
+"20","Control Economics","oecd gdp",192,0,0.171969407426464,0.00168504496783997
+"21","Control Economics","oecd gdp per cap",192,0,0.140584811774375,0.044108871747127
+"22","Control Economics","un gdp per cap",202,1.98019801980198,0.196178571417514,0.050360655104202
+"23","Control Economics","wb gdp per cap",204,2.94117647058824,0.219097927142439,0.0286100584670841
+"24","Control Economics","wb gdp",204,2.45098039215686,0.194329846313458,0.0707754381184177
+"25","Control Economics","wb gdp per cap ppp",204,0,0.166734723950311,0.0531391193593377
+"26","Control Economics","wb gdp ppp",204,0,0.176398636749489,0.00568540685124776
+"27","Control Economics","Not Controlling",204,5.88235294117647,0.222743422897763,0.0607211980839152
+"28","Control Urbanisation","wb urban density",256,1.953125,0.194043087599081,0.0141474250414565
+"29","Control Urbanisation","wb urban largest city ratio",256,1.953125,0.198489988254842,0.0136550108926407
+"30","Control Urbanisation","wb urban big city ratio",256,1.953125,0.171689953904169,0.0235062265564322
+"31","Control Urbanisation","wb urban population ratio",256,2.734375,0.190589527902645,0.0334652590049316
+"32","Control Urbanisation","ipums urbanisation",256,0,0.187086204599589,0.191311708915556
+"33","Control Urbanisation","Not Controlling",256,1.953125,0.192153954545453,0.0256378056432689
+"34","Control Urbanisation","un urban ratio",70,0,0.129987366421795,-0.194484946143631

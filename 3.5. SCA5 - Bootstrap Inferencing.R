@@ -26,6 +26,23 @@ Specs_LTO <- read.csv("results/Specs_LTO.csv")[, -1]
 Specs_IDG <- read.csv("results/Specs_IDG.csv")[, -1]
 Specs_TLI <- read.csv("results/Specs_TLI.csv")[, -1]
 
+# additional variables
+Specs_B5O <- na.omit(read.csv("results/Specs_B5O.csv")[, -1])
+Specs_B5C <- na.omit(read.csv("results/Specs_B5C.csv")[, -1])
+Specs_B5E <- na.omit(read.csv("results/Specs_B5E.csv")[, -1])
+Specs_B5A <- na.omit(read.csv("results/Specs_B5A.csv")[, -1])
+Specs_B5N <- na.omit(read.csv("results/Specs_B5N.csv")[, -1])
+
+Specs_GGI <- read.csv("results/Specs_GGI.csv")[, -1]
+Specs_FTO <- read.csv("results/Specs_FTO.csv")[, -1]
+Specs_HMO <- read.csv("results/Specs_HMO.csv")[, -1]
+Specs_PFO <- read.csv("results/Specs_PFO.csv")[, -1]
+Specs_RSE <- read.csv("results/Specs_RSE.csv")[, -1]
+
+Specs_FTO_P <- na.omit(read.csv("results/Specs_FTO_P.csv")[, -1])
+Specs_HMO_P <- na.omit(read.csv("results/Specs_HMO_P.csv")[, -1])
+Specs_PFO_P <- na.omit(read.csv("results/Specs_PFO_P.csv")[, -1])
+
 National_Data <- read.csv("data/all_national_data.csv")
 
 ######################################
@@ -213,3 +230,19 @@ boot_and_save(Results_Frame = Specs_UAI, Var_name = "UAI")
 boot_and_save(Results_Frame = Specs_LTO, Var_name = "LTO")
 boot_and_save(Results_Frame = Specs_IDG, Var_name = "IDG")
 boot_and_save(Results_Frame = Specs_TLI, Var_name = "TLI")
+
+boot_and_save(Results_Frame = Specs_B5O, Var_name = "B5O")
+boot_and_save(Results_Frame = Specs_B5C, Var_name = "B5C")
+boot_and_save(Results_Frame = Specs_B5E, Var_name = "B5E")
+boot_and_save(Results_Frame = Specs_B5A, Var_name = "B5A")
+boot_and_save(Results_Frame = Specs_B5N, Var_name = "B5N")
+
+boot_and_save(Results_Frame = Specs_GGI, Var_name = "GGI")
+boot_and_save(Results_Frame = Specs_FTO, Var_name = "FTO")
+boot_and_save(Results_Frame = Specs_HMO, Var_name = "HMO")
+boot_and_save(Results_Frame = Specs_PFO, Var_name = "PFO")
+boot_and_save(Results_Frame = Specs_RSE, Var_name = "RSE")
+
+boot_and_save(Results_Frame = Specs_FTO_P, Var_name = "FTO_P")
+boot_and_save(Results_Frame = Specs_HMO_P, Var_name = "HMO_P")
+boot_and_save(Results_Frame = Specs_PFO_P, Var_name = "PFO_P")
