@@ -177,7 +177,7 @@ Plot_PFO <- sca_combine(Specs_PFO, "Performance Orientation")
 Plot_RSE <- sca_combine(Specs_RSE, "Self-Esteem")
 
 Plot_FTO_P <- sca_combine(Specs_FTO_P, "Future Orientation Practices")
-Plot_HMO_P <- sca_combine(Specs_FTO_P, "Humane Orientation Practices")
+Plot_HMO_P <- sca_combine(Specs_HMO_P, "Humane Orientation Practices")
 Plot_PFO_P <- sca_combine(Specs_PFO_P, "Performance Orientation Practices")
 
 
