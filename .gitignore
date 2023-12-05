@@ -1,5 +1,5 @@
 data/ipumsi_00002.dat
 data/ipumsi_controls_data.csv
 data/un_populations.csv
-venv*
+documents/
 workspace.ipynb
