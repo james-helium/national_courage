@@ -219,6 +219,7 @@ boot_and_save <- function(Results_Frame, Var_name = "", R = 500) {
 
 ########################################
 # execute significance test and save in one go
+# This is the source of Table 4 in the paper
 ######################################
 
 boot_and_save(Results_Frame = Specs_IDV, Var_name = "IDV")

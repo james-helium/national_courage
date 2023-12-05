@@ -9,32 +9,9 @@ library(cowplot)
 #first, import the filled specification matrix
 ##################################################
 
-Specs_IDV <- read.csv("results/Specs_IDV.csv")[, -1]
-Specs_INO <- read.csv("results/Specs_INO.csv")[, -1]
-Specs_MAS <- read.csv("results/Specs_MAS.csv")[, -1]
-Specs_TER <- read.csv("results/Specs_TER.csv")[, -1]
-Specs_PDI <- read.csv("results/Specs_PDI.csv")[, -1]
-Specs_UAI <- read.csv("results/Specs_UAI.csv")[, -1]
-Specs_LTO <- read.csv("results/Specs_LTO.csv")[, -1]
-Specs_IDG <- read.csv("results/Specs_IDG.csv")[, -1]
-Specs_TLI <- read.csv("results/Specs_TLI.csv")[, -1]
+Specs_INO <- read.csv("results/raw_specification_results/Specs_INO.csv")[, -1]
+Specs_TER <- read.csv("results/raw_specification_results/Specs_TER.csv")[, -1]
 
-# additional variables
-Specs_B5O <- na.omit(read.csv("results/Specs_B5O.csv")[, -1])
-Specs_B5C <- na.omit(read.csv("results/Specs_B5C.csv")[, -1])
-Specs_B5E <- na.omit(read.csv("results/Specs_B5E.csv")[, -1])
-Specs_B5A <- na.omit(read.csv("results/Specs_B5A.csv")[, -1])
-Specs_B5N <- na.omit(read.csv("results/Specs_B5N.csv")[, -1])
-
-Specs_GGI <- read.csv("results/Specs_GGI.csv")[, -1]
-Specs_FTO <- read.csv("results/Specs_FTO.csv")[, -1]
-Specs_HMO <- read.csv("results/Specs_HMO.csv")[, -1]
-Specs_PFO <- read.csv("results/Specs_PFO.csv")[, -1]
-Specs_RSE <- read.csv("results/Specs_RSE.csv")[, -1]
-
-Specs_FTO_P <- na.omit(read.csv("results/Specs_FTO_P.csv")[, -1])
-Specs_HMO_P <- na.omit(read.csv("results/Specs_HMO_P.csv")[, -1])
-Specs_PFO_P <- na.omit(read.csv("results/Specs_PFO_P.csv")[, -1])
 
 ##################################################
 #now we create generic functions to generate visualisations
@@ -154,64 +131,18 @@ sca_combine <- function(Specifications, variable_name){
 ###################################################
 
 
-Plot_IDV <- sca_combine(Specs_IDV, "Individualism")
-Plot_MAS <- sca_combine(Specs_MAS, "Masculinity")
 Plot_TER <- sca_combine(Specs_TER, "Terrorism")
 Plot_INO <- sca_combine(Specs_INO, "Innovation")
-Plot_PDI <- sca_combine(Specs_PDI, "Power Distance")
-Plot_UAI <- sca_combine(Specs_UAI, "Uncertainty Avoidance")
-Plot_LTO <- sca_combine(Specs_LTO, "Longterm Orientation")
-Plot_IDG <- sca_combine(Specs_IDG, "Indulgence")
-Plot_TLI <- sca_combine(Specs_TLI, "Tightness/Looseness")
-
-# additional variables
-Plot_B5O <- sca_combine(Specs_B5O, "Openness")
-Plot_B5C <- sca_combine(Specs_B5C, "Conscientiousness")
-Plot_B5E <- sca_combine(Specs_B5E, "Extraversion")
-Plot_B5A <- sca_combine(Specs_B5A, "Agreeableness")
-Plot_B5N <- sca_combine(Specs_B5N, "Neuroticism")
-Plot_GGI <- sca_combine(Specs_GGI, "Prosociality")
-Plot_FTO <- sca_combine(Specs_FTO, "Future Orientation")
-Plot_HMO <- sca_combine(Specs_HMO, "Humane Orientation")
-Plot_PFO <- sca_combine(Specs_PFO, "Performance Orientation")
-Plot_RSE <- sca_combine(Specs_RSE, "Self-Esteem")
-
-Plot_FTO_P <- sca_combine(Specs_FTO_P, "Future Orientation Practices")
-Plot_HMO_P <- sca_combine(Specs_HMO_P, "Humane Orientation Practices")
-Plot_PFO_P <- sca_combine(Specs_PFO_P, "Performance Orientation Practices")
 
 
 ###################################################
 #EXPORT
 ###################################################
 
-pdf(file = 'results/SCA_plots.pdf', width = 12, height = 13.5)
-Plot_IDV
-Plot_MAS
-Plot_TER
+pdf(file = 'results/sca_plots/figure_2.pdf', width = 12, height = 13.5)
 Plot_INO
-Plot_PDI
-Plot_UAI
-Plot_LTO
-Plot_IDG
-Plot_TLI
 dev.off()
 
-pdf(file = 'results/SCA_plots_additional.pdf', width = 12, height = 13.5)
-Plot_B5O
-Plot_B5C
-Plot_B5E
-Plot_B5A
-Plot_B5N
-Plot_GGI
-Plot_FTO
-Plot_HMO
-Plot_PFO
-Plot_RSE
-dev.off()
-
-pdf(file = 'results/SCA_added_plots_practices.pdf', width = 12, height = 13.5)
-Plot_FTO_P
-Plot_HMO_P
-Plot_PFO_P
+pdf(file = 'results/sca_plots/figure_3.pdf', width = 12, height = 13.5)
+Plot_TER
 dev.off()
