@@ -72,6 +72,28 @@ performance_orientation <- c(
   "GLOBE_performance_orientation_societal_values"
 )
 rosenberg_self_esteem <- c("rosenberg_self_esteem")
+GLOBE_practices <- c(
+  "GLOBE_uncertainty_avoidance",
+  "GLOBE_future_orientation",
+  "GLOBE_power_distance",
+  "GLOBE_humane_orientation",
+  "GLOBE_performance_orientation",
+  "GLOBE_ingroup_collectivism",
+  "GLOBE_gender_egalitarianism",
+  "GLOBE_assertiveness",
+  "GLOBE_institutional_collectivism"
+)
+GLOBE_practices_code <- c(
+  "GLB_P_UNA",
+  "GLB_P_FTO",
+  "GLB_P_PDI",
+  "GLB_P_HMO",
+  "GLB_P_PFO",
+  "GLB_P_IGO",
+  "GLB_P_GEG",
+  "GLB_P_ASV",
+  "GLB_P_INS"
+)
 
 
 
@@ -209,3 +231,21 @@ write.csv(Specs_RSE, "results/Specs_RSE.csv")
 write.csv(Specs_FTO_P, "results/Specs_FTO_P.csv")
 write.csv(Specs_HMO_P, "results/Specs_HMO_P.csv")
 write.csv(Specs_PFO_P, "results/Specs_PFO_P.csv")
+
+################################
+# GLOBE practices in a loop
+#################################
+
+for (i in 1:length(GLOBE_practices)) {
+  Specs_GLOBE <- sca_specifications(
+    x_measures = Courage_Measures, y_measures = c(GLOBE_practices[i])
+  )
+  write.csv(
+    Specs_GLOBE,
+    paste0(
+      "results/raw_specification_results/Specs_",
+      GLOBE_practices_code[i],
+      ".csv"
+    )
+  )
+}

@@ -233,3 +233,25 @@ write.csv(Specs_RSE, "results/Specs_RSE.csv")
 write.csv(Specs_FTO_P, "results/Specs_FTO_P.csv")
 write.csv(Specs_HMO_P, "results/Specs_HMO_P.csv")
 write.csv(Specs_PFO_P, "results/Specs_PFO_P.csv")
+
+
+# and the GLOBE practices
+
+GLOBE_practices_code <- c(
+  "GLB_P_UNA",
+  "GLB_P_FTO",
+  "GLB_P_PDI",
+  "GLB_P_HMO",
+  "GLB_P_PFO",
+  "GLB_P_IGO",
+  "GLB_P_GEG",
+  "GLB_P_ASV",
+  "GLB_P_INS"
+)
+
+for (practice in GLOBE_practices_code) {
+  Specs_GLOBE <- read.csv(paste0("results/raw_specification_results/Specs_", practice, ".csv"))[, -1]
+  Specs_GLOBE <- sca_regression(Specs_GLOBE)
+  Specs_GLOBE <- Specs_GLOBE[Specs_GLOBE$n > 10, ]
+  write.csv(Specs_GLOBE, paste0("results/raw_specification_results/Specs_", practice, ".csv"))
+}

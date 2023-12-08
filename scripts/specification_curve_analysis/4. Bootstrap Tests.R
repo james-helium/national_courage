@@ -212,7 +212,14 @@ boot_and_save <- function(Results_Frame, Var_name = "", R = 500) {
   Test_Results <- bootstrap_test(Specs_Frame = Results_Frame, R = R)
   # save the results
   # save bootstrap frames as well in case we need to go back to them
-  write.csv(Test_Results, paste("results/Test_Results_", Var_name, ".csv", sep = ""))
+  write.csv(
+    Test_Results,
+    paste(
+      "results/bootstrapping_test_results/Test_Results_",
+      Var_name, ".csv",
+      sep = ""
+    )
+  )
   # output display
   Test_Results
 }
@@ -247,3 +254,31 @@ boot_and_save(Results_Frame = Specs_RSE, Var_name = "RSE")
 boot_and_save(Results_Frame = Specs_FTO_P, Var_name = "FTO_P")
 boot_and_save(Results_Frame = Specs_HMO_P, Var_name = "HMO_P")
 boot_and_save(Results_Frame = Specs_PFO_P, Var_name = "PFO_P")
+
+
+############################################
+
+# globe measures
+
+GLOBE_practices_code <- c(
+  "GLB_P_UNA",
+  "GLB_P_FTO",
+  "GLB_P_PDI",
+  "GLB_P_HMO",
+  "GLB_P_PFO",
+  "GLB_P_IGO",
+  "GLB_P_GEG",
+  "GLB_P_ASV",
+  "GLB_P_INS"
+)
+
+for (practice in GLOBE_practices_code) {
+  Specs_GLOBE <- read.csv(
+    paste(
+      "results/raw_specification_results/Specs_",
+      practice, ".csv",
+      sep = ""
+    )
+  )[, -1]
+  boot_and_save(Results_Frame = Specs_GLOBE, Var_name = practice)
+}
